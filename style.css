@@ -4,6 +4,11 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Chicago";
+  src: url("visuals/fonts/chicago.woff2");
+}
+
 body {
   background-color: black;
   color: darkgray;
@@ -21,7 +26,8 @@ strong {
 }
 
 #home {
-  width: 450px;
+  height: 350px;
+  margin-top: 20vh;
   aspect-ratio: 1 / 1;
   background-image: url('visuals/imgs/room.png');
   background-size: cover;
@@ -30,11 +36,10 @@ strong {
 
   outline: 2px double #F7F7F7;
   padding: 15px;
-  margin-top: 20vh;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;   /* pushes main to top, footer to bottom */
+  justify-content: space-between;
   text-align: right;
 }
 
@@ -45,7 +50,7 @@ strong {
   height: 100vh;
   border: none;
   z-index: -1;
-  pointer-events: none;   /* so it won't block clicks */
+  pointer-events: none;
 }
 
 #content {
@@ -53,9 +58,9 @@ strong {
   z-index: 1;
   background-color: rgba(0, 0, 0, .3);
   
-  margin: 30px;
+  margin: 35px;
+  margin-top: 10px;
   padding: 5px;
-  gap: 10px;
 }
 
 .header {
@@ -77,11 +82,11 @@ strong {
 }
 
 .blk {
-  background-color: #111111;
+  background-color: black;
 }
 
 #spam {
-  background-color: #111111;
+  background-color: black;
   display-items: inline-block;
   align-self: flex-end;
 }
@@ -99,4 +104,68 @@ strong {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.banner {
+  max-width: 100%;
+  height: 250px;
+  background-image: url("visuals/imgs/bannerabout.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: block;
+  
+  outline: 1px solid white;
+  margin: 5px;
+}
+
+
+/*about.html*/
+.navbar {
+  font-size: 20px;
+  color: white;
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.window {
+  outline: 1px solid #111111;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  filter: drop-shadow(10px 10px 0px #111111);
+}
+
+.wbar {
+  font-family: "Chicago";
+  font-size: 25px;
+  text-align: left;
+  font-weight: normal;
+  padding: 10px;
+  outline: 1px solid #111111;
+  background-color: #222222;
+  color: white;
+}
+
+.wcontent {
+  /*use padding on child content*/
+  background-color: #333333;
+}
+
+.wctitle {
+  /*must be a div*/
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.wtext {
+  /*must be a div*/
+  padding: 15px;
 }

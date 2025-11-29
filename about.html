@@ -6,15 +6,81 @@
   <title>whoami</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
 </head>
 <body>
   <iframe src="visuals/rain/dist/index.html" id="bg"></iframe>
   
+  
+  <nav class="navbar">
+    <div><a href="index.html">bluezcreen.github.io</a></div>
+    <div><i class="fa-solid fa-battery-three-quarters"></i>
+      06:07AM
+    </div>
+  </nav>
+  <nav style="text-align: left; font-size: 20px;">
+  homepage
+  </nav>
+  
   <!-- where the site actually sits-->
-  <main id="content" style="height: 800px;">
-    <strong>Hello, world!</strong>
-    <br>
-    <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Mauris eget rutrum nibh. Maecenas sit amet risus odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed id metus nisi. Praesent gravida semper est, ac fermentum lacus maximus id. Sed molestie neque non turpis euismod tempus. Quisque viverra metus eu nibh rhoncus rhoncus.
+  <main id="content">
+    
+    <!--BASIC STRUCTURE FOR WINDOW ELEMENT
+    <div class="window">
+      <nav class="wbar">Title</nav>
+      <div class="wctitle">Content Title</div>
+      <main class="wcontent">
+        Content
+      </main>
+    </div>
+    -->
+    
+    <div class="window">
+      <nav class="wbar">Banner.png</nav>   
+      <main class="wcontent" style="padding: 10px;">
+        <div class="banner"></div>
+      </main>
+    </div>
+    
+    <article class="window">
+      <nav class="wbar">Title</nav>
+      <main class="wcontent">
+        <section class="wtext">
+        Content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tortor lorem, congue vitae accumsan eu, ultricies sit amet eros.
+        Curabitur pretium massa erat, eu ultricies tellus
+          sodales congue. Interdum et malesuada fames ac
+          ante ipsum primis in faucibus. Phasellus ultrices
+          tempor metus, ut porttitor mi molestie in. Nullam
+          ullamcorper vehicula nibh quis tempor.
+          Phasellus luctus in odio eget porta.
+          Praesent scelerisque ante blandit tincidunt dictum.
+        </section>
+      </main>
+    </article>
+    
+    <article class="window">
+      <nav class="wbar">About This Site</nav>
+      <main class="wcontent">
+        <section class="wtext">
+            <strong>Hello, world!</strong>
+            <br>
+            <strong>This site is open source.</strong>
+            I think that'd be pretty obivious to you since this is Github.
+            Open the repo <strong>here.</strong>
+            This site sucks though, so I suggest not using it.<br><br>
+            <br>
+            Website last updated: <strong>December 2025</strong>
+        </section>
+      </main>
+    </article>
+    
+    
+    
+    
+    
+    
+    
   </main>
 </body>
 </html>
