@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "SNNM";
+  src: url("visuals/fonts/Shinonome.ttf") format("truetype"); 
+  font-display: swap;
+}
+
+body {
+  background-color: black;
+  color: darkgray;
+  font-family: "SNNM", monospace;
+  font-size: 17px;
+}
+
+a {
+  color: white;
+}
+
+strong {
+  color: white;
+  font-weight: normal;
+}
+
+#home {
+  width: 450px;
+  aspect-ratio: 1 / 1;
+  background-image: url('visuals/imgs/room.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  outline: 2px double #F7F7F7;
+  padding: 15px;
+  margin-top: 20vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;   /* pushes main to top, footer to bottom */
+  text-align: right;
+}
+
+#bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  z-index: -1;
+  pointer-events: none;   /* so it won't block clicks */
+}
+
+#content {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .3);
+  
+  margin: 30px;
+  padding: 5px;
+  gap: 10px;
+}
+
+.header {
+  font-size: 20px;
+  margin: 0;
+}
+
+.basic {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.center {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blk {
+  background-color: #111111;
+}
+
+#spam {
+  background-color: #111111;
+  display-items: inline-block;
+  align-self: flex-end;
+}
+
+#notfound {
+  margin-top: 20vh;
+  width: 350px;
+  height: 350px;
+  background-image: url("visuals/imgs/claus.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
