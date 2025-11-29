@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>whoami</title>
+  <title>main</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -13,69 +13,118 @@
   <iframe src="visuals/rain/dist/index.html" id="bg"></iframe>
   
   
-  <nav class="navbar">
+  <nav class="controlbar">
     <div><a href="index.html">bluezcreen.github.io</a></div>
     <div><i class="fa-solid fa-battery-three-quarters"></i>
-      06:07AM
+      <span id="clock"></span>
     </div>
   </nav>
-  <nav style="text-align: left; font-size: 20px;">
-  homepage
+  
+  <nav class="navbar">
+    <u>homepage</u>
+    <a href="pages/blog.html">blog</a>
+    <a>tunes</a>
+    <a>stuff</a>
   </nav>
   
   <!-- where the site actually sits-->
   <main id="content">
     
     <!--BASIC STRUCTURE FOR WINDOW ELEMENT
-    <div class="window">
-      <nav class="wbar">Title</nav>
-      <div class="wctitle">Content Title</div>
-      <main class="wcontent">
-        Content
-      </main>
-    </div>
-    -->
-    
-    <div class="window">
-      <nav class="wbar">Banner.png</nav>   
-      <main class="wcontent" style="padding: 10px;">
-        <div class="banner"></div>
-      </main>
-    </div>
-    
     <article class="window">
       <nav class="wbar">Title</nav>
       <main class="wcontent">
+      <div class="wctitle">Content Title</div>
+      <div class="pd">Content</div>
+      </main>
+    </article>
+    -->
+    
+    <article class="window"><nav class="wbarl">Main Page</nav></article>
+    
+    <article class="window">
+      <nav class="wbar">What is this place?</nav>   
+      <main class="wcontent" style="padding-top: 15px;">
+         <img src="visuals/imgs/b_about.png" class="banner">
+        
+        <div class="pd">
+          "Just a basic website of mine.
+          Though I'm not sure what to put in it.
+          Remaining empty it'll be then."
+        </div>
+      </main>
+    </article>
+    
+    <article class="window">
+      <nav class="wbar">Where I'm at</nav>
+      <main class="wcontent">
         <section class="wtext">
-        Content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tortor lorem, congue vitae accumsan eu, ultricies sit amet eros.
-        Curabitur pretium massa erat, eu ultricies tellus
-          sodales congue. Interdum et malesuada fames ac
-          ante ipsum primis in faucibus. Phasellus ultrices
-          tempor metus, ut porttitor mi molestie in. Nullam
-          ullamcorper vehicula nibh quis tempor.
-          Phasellus luctus in odio eget porta.
-          Praesent scelerisque ante blandit tincidunt dictum.
+          
+        <div class="even" style="font-size: 15px;">
+        
+        <span>
+        <a href="https://x.com/bluezcreen?s=09">
+        <i class="fa-brands fa-twitter"></i>
+         Twitter</a>
+        </span>
+        
+        <span>
+        <a href="https://m.youtube.com/channel/UCLZkiAjM041QTJiqf9Q_Vmw">
+        <i class="fa-brands fa-youtube"></i>
+         YouTube</a>
+        </span>
+        
+        <span>
+        <a href="https://www.tiktok.com/@bluezcreen_?_r=1&_t=ZP-91FZekLYC7z">
+        <i class="fa-brands fa-tiktok"></i>
+         TikTok</a>
+        </span>
+        
+        <span>
+        <a href="https://bsky.app/profile/bluezcreen.bsky.social">
+        <i class="fa-solid fa-earth-asia"></i>
+         Bluesky</a>
+        </span>
+      
+        <span>
+        <a href="https://www.last.fm/user/bluezcreen">
+        <i class="fa-brands fa-lastfm"></i>
+         last.fm</a><br>
+        </span>
+    </div>
+          
         </section>
       </main>
     </article>
     
     <article class="window">
-      <nav class="wbar">About This Site</nav>
+      <nav class="wbar">þe Blog</nav>
+      <main class="wcontent">
+        <div class="pd">
+            <div style="overflow-y: auto; outline: 1px solid white;" class="pd">
+              <a href="pages/blog.html">29.11.25 / 67% of this (brand new) site was made by a...<br></a>
+              <a>29.11.25 / yadda yadda<br></a>
+              <a>29.11.25 / yadda yadda<br></a>
+            </div>
+          </div>
+      </main>
+    </article>
+    
+    <article class="window">
+      <nav class="wbar">About this site</nav>
       <main class="wcontent">
         <section class="wtext">
             <strong>Hello, world!</strong>
             <br>
             <strong>This site is open source.</strong>
             I think that'd be pretty obivious to you since this is Github.
-            Open the repo <strong>here.</strong>
-            This site sucks though, so I suggest not using it.<br><br>
-            <br>
-            Website last updated: <strong>December 2025</strong>
+            Open the repo <a href="https://github.com/bluezcreen/bluezcreen.github.io">here</a>, and you can use the HTML all you want.
+            This site and its marking sucks though, so I don't <strong>think that's too wise.</strong>
         </section>
       </main>
     </article>
     
-    
+    <script src="clock.js"></script>
     
     
     
