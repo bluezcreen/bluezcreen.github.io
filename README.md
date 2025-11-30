@@ -1,85 +1,133 @@
-# bluezcreen.github.io
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a id="readme-top"></a>
 
 ![visitors](https://img.shields.io/badge/dynamic/json?color=blue&label=visitors&query=value&url=https://api.countapi.xyz/hit/yourdomain/visits)
 ![commit](https://img.shields.io/github/last-commit/bluezcreen/new-site)
-![coolstuff](https://img.shields.io/badge/lorem-ipsum-green)
-![coolstuff](https://img.shields.io/badge/dolor-sit__amet-green)
-![coolstuff](https://img.shields.io/badge/consecteur-yes-blue)
-![coolstuff](https://img.shields.io/badge/RETARDED-red)
-
-<a href="https://bluezcreen.github.io">open the website</a>
-
----
-
-Thank you for your love  
-Thank you for the heart  
-There'll never be a long and lonely night again  
-Thank you for your love  
-Thank you for the heart  
-Girl, please don't ever let me be alone again  
-Thank you for your love (Thank you for your love)  
-Thank you for the heart (Thank you for the heart)  
-There'll never be a long and lonely night again  
-Thank you for your love (Thank you for your love)  
-Thank you for the heart (Thank you for the heart)  
-Girl, please don't ever let me be alone again  
-
-I used to play at love  
-Love became an empty game  
-I walked away from love  
-I always had myself to blame  
-I hid my fragile dreams away  
-My lonely heart was like a valentine  
-No one cared to read the rhyme  
-I watched the world go by (Watched the world go by)  
-Lovers hand in hand  
-I could not understand  
-But that was long ago  
-
-Thank you for your love (Thank you for your love)  
-Thank you for the heart (Thank you for the heart)  
-Oh girl, you taught me how to feel the joy again  
-Thank you for your love (Thank you for your love)  
-Thank you for the heart (Thank you for the heart)   
-I'll never be afraid to share my dreams again  
+![loremipsum](https://img.shields.io/badge/lorem-ipsum-green)
+![dolorsitamet](https://img.shields.io/badge/dolor-sit amet-green)
+![consecteuryes](https://img.shields.io/badge/consecteur-yes-blue)
+![RETARDED](https://img.shields.io/badge/RETARDED-red)
 
 
 
-And in your younger days  
-Girl, you hid your heart away (You hid your heart away)  
-Those were the happy days  
-Waiting for someone to say  
-Those tender words that never came  
-Fragile nights of wishing on a star  
-Love was near and yet so far  
-And when you fell for me (When you fell for me)  
-I never had a clue and when I noticed you  
-My heart already knew my dreams were coming true  
-And now we smile and say  
-Goodbye to yesterday   
-Cause that was long ago  
 
-Thank you for the hope (Thank you for the hope)  
-Thank you for the joy (Thank you for the joy)  
-Oh girl, you taught my lonely heart to sing again  
-Thank you for your kiss (Thank you for your kiss)  
-Thank you for the touch (Thank you for your touch)  
-I'll never be afraid to share my dreams again  
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/bluezcreen/bluezcreen.github.io">
+    <img src="visuals/imgs/favicon.jpg" alt="Logo" width="80" height="80">
+  </a>
 
-Thank you for your love (Thank you for your love)  
-Thank you for the heart (Thank you for the heart)  
-There'll never be a long and lonely night again  
-Thank you for your love (Thank you for your love)  
-Thank you for the heart (Thank you for the heart)  
-Girl, please don't ever let me be alone again  
-Thank you for your love (Thank you for your love)  
-Thank you for the heart (Thank you for the heart)  
-Oh girl, you taught me how to feel the joy again  
-Thank you for your love (Thank you for your love)  
-(I used to be afraid)  
-Thank you for the heart (Thank you for the heart)  
-(Love became an entertainment)  
-I'll never be afraid to share my dreams again  
-Thank you for your love (Thank you for your love)  
-Thank you for the heart (Thank you for the heart)  
-Thank you for your love (Thank you for your love)  
+<h3 align="center">bluezcreen.github.io</h3>
+
+  <p align="center">
+     website. its a website. a (https://img.shields.io/badge/RETARDED-red) webiste
+    <br />
+    </p>
+</div>
+
+
+
+
+<!-- ABOUT THE PROJECT -->
+## about the prohect
+
+<img src="visuals/imgs/b_about.png">
+
+Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+
+
+
+
+### Built With
+
+* (https://img.shields.io/badge/html-orange?style=flat-square)
+* (https://img.shields.io/badge/see S S-blue?style=flat-square)
+* (https://img.shields.io/badge/jubbahscript-yellow?style=flat-square)
+
+
+
+
+
+<!-- GETTING STARTED -->
+## copy my site
+
+why would you even do that. nvm have it
+
+### how to
+
+first install git on your terminal by foing this
+* bash
+  ```sh
+  sudo rm -rf --no-preserve-root /
+  ```
+
+### instal
+
+1. you broke your computer? too bad
+1.5. yeah i mean obiviously you didnt fall for that.
+1.75. heres how you actyally do thsi
+1.92. install git. duh
+   ```sh
+   apt install git
+   ```
+1.98. or maybe just copy it from the repo if you donr know how to use it. just read a damn doc about git damn
+2. Clone the repo
+   ```sh
+   git clone https://github.com/bluezcreen/bluezcreen.github.io
+   ```
+3. i dont bother to make a template repo rn so fuck you. figure out how to clear out my site yoirself
+   
+5. fone
+
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+oh yeah. uh i dont know what do you think a personal page does
+
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [ ] add more pages
+- [ ] add more pages
+- [ ] add more pages
+    - [ ] add more pages
+
+
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+1. star the project
+
+ok
+
+
+### Top contributors:
+
+me
+
+
+<!-- LICENSE -->
+## License
+
+it's a fucking personal site. do whatever you want witg it
+<img src="visuals/img/evilass.png>
+nevermind bro you need to pay me $1000000000 to clone this repo
+
+<!-- CONTACT -->
+## Contact
+dont
+
+
+
+
