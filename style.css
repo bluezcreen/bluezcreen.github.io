@@ -120,15 +120,9 @@ strong {
   
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
   margin: 0;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  color: darkgray;
 }
 
 .window {
@@ -217,3 +211,35 @@ strong {
   margin-left: auto;
   margin-right: auto;
 }
+
+.acoverblank {
+  width: 140px;
+  height: 140px;
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.mbutton {
+  font-family: "SNNM";
+  background-color: #222222;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  filter: drop-shadow(5px 5px 0px #000000);
+}
+
+.mcontent {
+  min-width: 180px;
+  display: none;
+  position: absolute;
+  background-color: #333333;
+  filter: drop-shadow(5px 5px 0px #000000);
+  z-index: 2;
+  font-size: 20px;
+  padding: 10px;
+  
+}
+
+.menu:hover .mcontent {display: block;}
