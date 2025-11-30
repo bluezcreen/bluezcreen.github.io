@@ -5,32 +5,35 @@
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>main</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
 </head>
 <body>
-  <iframe src="visuals/rain/dist/index.html" id="bg"></iframe>
+  <iframe src="../visuals/rain/dist/index.html" id="bg"></iframe>
   
   
-  <nav class="controlbar">
-    <div><a href="index.html">bluezcreen.github.io</a></div>
-    <div><i class="fa-solid fa-battery-three-quarters"></i>
+   <nav class="controlbar">
+    <div><a href="../index.html">bluezcreen.github.io</a></div>
+    <div style="gap: 10px;">
+      <span><i class="fa-solid fa-battery-three-quarters"></i></span>
+      <span><i class="fa-solid fa-signal"></i></span>
       <span id="clock"></span>
     </div>
   </nav>
   
   <nav class="navbar">
     <u>homepage</u>
-    <a href="pages/blog.html">blog</a>
-    <a>tunes</a>
-    <a>stuff</a>
+    <a href="blog.html">blog</a>
+    <a href="tunes.html">tunes</a>
+    <a href="stuff.html">stuff</a>
   </nav>
   
   <!-- where the site actually sits-->
   <main id="content">
     
-    <!--BASIC STRUCTURE FOR WINDOW ELEMENT
+    <!--
+    BASIC STRUCTURE FOR WINDOW ELEMENT
     <article class="window">
       <nav class="wbar">Title</nav>
       <main class="wcontent">
@@ -38,14 +41,17 @@
       <div class="pd">Content</div>
       </main>
     </article>
+    
+    TITLE ONLY
+    <article class="window"><nav class="wbarl">Title</nav></article>
     -->
     
-    <article class="window"><nav class="wbarl">Main Page</nav></article>
+    
     
     <article class="window">
       <nav class="wbar">What is this place?</nav>   
-      <main class="wcontent" style="padding-top: 15px;">
-         <img src="visuals/imgs/b_about.png" class="banner">
+      <main class="wcontent">
+         <img src="../visuals/imgs/b_about.png" class="banner">
         
         <div class="pd">
           "Just a basic website of mine.
@@ -124,7 +130,10 @@
       </main>
     </article>
     
-    <script src="clock.js"></script>
+    <div class="center basic" style="text-align: center;">
+      bluezcreen.github.io, December MMXXV
+    </div>
+    <script src="../clock.js"></script>
     
     
     

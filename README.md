@@ -1,3 +1,13 @@
+<h1>bluezcreen.github.io</h1>
+![visitors](https://img.shields.io/badge/dynamic/json?color=blue&label=visitors&query=value&url=https://api.countapi.xyz/hit/yourdomain/visits)
+![commit](https://img.shields.io/github/last-commit/bluezcreen/new-site)
+![coolstuff](https://img.shields.io/badge/lorem-impsum-green)
+![coolstuff](https://img.shields.io/badge/dolor-sit_amet-green)
+![coolstuff](https://img.shields.io/badge/consecteur-yes-blue)
+![coolstuff](https://img.shields.io/badge/RETARDED-red)
+
+<a href="https://bluezcreen.github.io>open the website</a>
+<hr>
 Thank you for your love  
 Thank you for the heart  
 There'll never be a long and lonely night again  
