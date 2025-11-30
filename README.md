@@ -4,7 +4,7 @@
 ![visitors](https://img.shields.io/badge/dynamic/json?color=blue&label=visitors&query=value&url=https://api.countapi.xyz/hit/yourdomain/visits)
 ![commit](https://img.shields.io/github/last-commit/bluezcreen/new-site)
 ![loremipsum](https://img.shields.io/badge/lorem-ipsum-green)
-![dolorsitamet](https://img.shields.io/badge/dolor-sit amet-green)
+![dolorsitamet](https://img.shields.io/badge/dolor-sit__amet-green)
 ![consecteuryes](https://img.shields.io/badge/consecteur-yes-blue)
 ![RETARDED](https://img.shields.io/badge/RETARDED-red)
 
@@ -21,7 +21,7 @@
 <h3 align="center">bluezcreen.github.io</h3>
 
   <p align="center">
-     website. its a website. a (https://img.shields.io/badge/RETARDED-red) webiste
+     website. its a website. a ![RETARDED](https://img.shields.io/badge/RETARDED-red) webiste
     <br />
     </p>
 </div>
@@ -41,9 +41,9 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 
 ### Built With
 
-* (https://img.shields.io/badge/html-orange?style=flat-square)
-* (https://img.shields.io/badge/see S S-blue?style=flat-square)
-* (https://img.shields.io/badge/jubbahscript-yellow?style=flat-square)
+* ![html](https://img.shields.io/badge/html-orange?style=flat-square)
+* ![css](https://img.shields.io/badge/see__S__S-blue?style=flat-square)
+* ![js](https://img.shields.io/badge/jubbahscript-yellow?style=flat-square)
 
 
 
@@ -64,14 +64,14 @@ first install git on your terminal by foing this
 
 ### instal
 
-1. you broke your computer? too bad
-1.5. yeah i mean obiviously you didnt fall for that.
-1.75. heres how you actyally do thsi
-1.92. install git. duh
+1. you broke your computer? too bad  
+1.5. yeah i mean obiviously you didnt fall for that.  
+1.75. heres how you actyally do thsi  
+1.92. install git. duh  
    ```sh
    apt install git
    ```
-1.98. or maybe just copy it from the repo if you donr know how to use it. just read a damn doc about git damn
+1.98. or maybe just copy it from the repo if you donr know how to use it. just read a damn doc about git damn  
 2. Clone the repo
    ```sh
    git clone https://github.com/bluezcreen/bluezcreen.github.io
@@ -121,7 +121,7 @@ me
 ## License
 
 it's a fucking personal site. do whatever you want witg it
-<img src="visuals/img/evilass.png>
+![evil ass license](relative%20visuals/imgs/evilass.png?raw=true "evil ass license")
 nevermind bro you need to pay me $1000000000 to clone this repo
 
 <!-- CONTACT -->
