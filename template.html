@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<!--WIP!!!!!!-->
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="visuals/themes/style.css"> <!--Mind the referral paths for srcs.-->
+  <link rel="icon" type="image/x-icon" href="../visuals/imgs/favicon.jpg"> <!--change this favicon to anything you want-->
+</head>
+
+<body>
+  <n-avbar></n-avbar> <!--The navbar must be outside the main wrapper.-->
+  
+  <main class="content"> <!--Gives padding to the elements and works as your main section.-->
+    
+    <p-anel title="This is the title."> <!--Add the title by the custom parameter.-->
+      <img src="visuals/imgs/b_references.png" class="banner"> <!--By the design language of my site, banners are 750x250 (3:1). You can change that too.-->
+      <section class="wcontent">This is the content.</section> <!--.wcontent gives padding to the elements inside it. Use it for text.-->
+    </p-anel>
+    
+    <f-ooter></f-ooter> <!--The footer can be inside or outside the main section.-->
+  </main>
+  
+</body>
+
+
+<!--
+This script tag is a must to actually load in the three main components.
+The navbar (<n-avbar>), windows (<p-anel>), and footer (<f-ooter>)
+To change the branding, edit it on elements.js.
+-->
+<script src="elements.js"></script>
+</html>

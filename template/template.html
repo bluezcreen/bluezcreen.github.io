@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../visuals/themes/style.css"> <!--Mind the pathings for srcs.-->
+  <link rel="icon" type="image/x-icon" href="../visuals/imgs/favicon.jpg"> <!--change this favicon to anything you want-->
+</head>
+
+<body>
+  <n-avbar></n-avbar> <!--The navbar must be outside the main wrapper. You can also modify it by editing elements.js.-->
+  
+  <main class="content"> <!--Gives padding to the elements and works as your main section.-->
+    
+    <!--A window telling the user that JS is inactive. Yes, I know it's unreasonably long-->
+    <noscript><article class="window"><nav class="wbar">Oops!</nav><div class="wcontent df"><img src="../visuals/imgs/404.png" style="width: 80px; height: 80px;"><p>Your JavaScript is inactive.<br>Please turn it back on to load this page's elements.</p></div></article></noscript>
+    
+    <p-anel title="This is the title."> <!--Add the title by the custom parameter.-->
+      <img src="../visuals/imgs/b_references.png" class="banner"> <!--By the design language of my site, banners are 750x250 (3:1). You can change that too.-->
+      <section class="wcontent">This is the content. Above is the banner.</section> <!--.wcontent gives padding to the elements inside it. Use it for text.-->
+    </p-anel>
+    
+    
+    <p-anel title="Scrollboxes.">
+      <section class="wcontent">
+        <span>A scrollbox for unnecesarily long paragraphs.<br><br></span>
+      <div class="scrollbox">
+        I used to play at love<br>
+        Love became an empty game<br>
+        I walked away from love<br>
+        I always had myself to blame<br>
+        I hid my fragile dreams away<br>
+        My lonely heart was like a valentine<br>
+        No one cared to read the rhyme<br>
+        I watched the world go by (Watched the world go by)<br>
+        Lovers hand in hand<br>
+        I could not understand<br>
+        But that was long ago<br><br>
+        
+        Thank you for your love (Thank you for your love)<br>
+        Thank you for the heart (Thank you for the heart)<br>
+        Oh girl, you taught me how to feel the joy again<br>
+        Thank you for your love (Thank you for your love)<br>
+        Thank you for the heart (Thank you for the heart)<br>
+        I'll never be afraid to share my dreams again<br><br>
+        
+        And in your younger days<br>
+        Girl, you hid your heart away (You hid your heart away)<br>
+        Those were the happy days<br>
+        Waiting for someone to say<br>
+        Those tender words that never came<br>
+        Fragile nights of wishing on a star<br>
+        Love was near and yet so far<br>
+        And when you fell for me (When you fell for me)<br>
+        I never had a clue and when I noticed you<br>
+        My heart already knew my dreams were coming true<br>
+        And now we smile and say<br>
+        Goodbye to yesterday<br>
+        Cause that was long ago<br>
+      </div>
+      </section>
+    </p-anel>
+    <f-ooter></f-ooter> <!--The footer can be inside or outside the main section.-->
+    <!--Footers contain badges and a branding. You may change it in elements.js.-->
+  </main>
+  
+</body>
+
+
+<!--
+This script tag is a must to actually load in the three main components.
+The navbar (<n-avbar>), windows (<p-anel>), and footer (<f-ooter>)
+To change the branding, edit it on elements.js.
+-->
+<script src="../elements.js"></script>
+
+
+<!--I beg an apology if the quality of this site is poor.-->
+</html>

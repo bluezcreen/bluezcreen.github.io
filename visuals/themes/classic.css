@@ -1,0 +1,393 @@
+/*variables*/
+
+:root {
+  --prim: #000000;
+  --seco: #FFFFFF;
+  --tert: #A7A7A7;
+  
+  --seco2: #222222;
+  --seco3: #333333;
+  --seco4: #444444;
+  --seco5: #555555;
+  --seco6: #666666;
+  --seco7: #767676;
+  
+  --bg: #4F5071;
+  
+  --test: red;
+  
+  --font1: "Chicago";
+  --font2: "Monaco";
+}
+
+/*desktop*/
+@media screen and (min-width: 900px) {
+  .content { padding: 80px 10vw 10vh 10vw !important; }
+  .dtp {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      gap: 20px;
+  }
+  .dtc { flex: 1; }
+  
+  .array { /*for the cards on the tunes page*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 900px) {
+  .content { padding: 80px 10vw 10vh 10vw !important; }
+  .dtp {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      gap: 20px;
+  }
+  .dtc { flex: 1; }
+}
+
+/*font*/
+
+@font-face {
+  font-family: "Monaco";
+  src: url("../fonts/Monaco.ttf");
+}
+
+@font-face {
+  font-family: "Chicago";
+  src: url("../fonts/ChicagoFLF.ttf");
+}
+
+/*core elements*/
+body {
+  font-family: var(--font2);
+  background-image: url("../imgs/classicbg.png");
+  
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--prim);
+  font-size: 0.9rem;
+}
+
+hr {
+  color: var(--prim);
+}
+
+/*custom elements*/
+.content {
+  padding: 70px 20px 20px 20px;
+}
+
+p-anel {
+  display: block;
+}
+
+.window {
+  background-color: var(--tert);
+  outline: 2px solid var(--prim);
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.wbar {
+  background: var(--tert);
+  color: var(--prim);
+  
+  border-top: 2px solid var(--seco);
+  border-left: 2px solid var(--seco);
+  border-right: 2px solid var(--prim);
+  border-bottom: 2px solid var(--prim);
+  outline: 1px solid var(--prim);
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  z-index: 2;
+  
+  font-family: "Chicago";
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.sbar {
+  font-family: var(--font1);
+  background-color: var(--tert);
+  
+  border-top: 2px solid var(--seco);
+  border-left: 2px solid var(--seco);
+  border-right: 2px solid var(--prim);
+  border-bottom: 2px solid var(--prim);
+  outline: 1px solid var(--prim);
+  color: var(--prim);
+  
+  padding: 12px;
+  font-size: 1.1rem;
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wbars {
+  font-family: var(--font1);
+  background-color: var(--seco);
+  outline: 2px solid var(--prim);
+  filter: drop-shadow(8px 8px 0px var(--prim));
+  border-radius: 2px;
+  color: var(--prim);
+  
+  padding: 12px;
+  font-size: 1.1rem;
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wcontent {
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid var(--prim);
+}
+
+.bannerlnk {
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  border-bottom: 2px solid var(--prim);
+}
+
+.scrollbox {
+  font-family: "Chicago";
+  margin: 15px;
+  padding: 10px;
+  height: 200px; /*this can be as long as you want*/
+  overflow-y: scroll;
+  
+  border-top: 2px solid var(--prim);
+  border-left: 2px solid var(--prim);
+  border-right: 2px solid var(--seco);
+  border-bottom: 2px solid var(--seco);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--seco7);
+  outline: 1px solid var(--prim);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  outline: 2px solid var(--prim);
+  background-color: var(--tert);
+  
+  border-top: 2px solid var(--seco);
+  border-left: 2px solid var(--seco);
+  border-right: 2px solid var(--prim);
+  border-bottom: 2px solid var(--prim);
+}
+
+.ico {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid var(--seco);
+  border-left: 2px solid var(--seco);
+  border-right: 2px solid var(--prim);
+  border-bottom: 2px solid var(--prim);
+  outline: 1px solid var(--prim);
+  color: var(--prim);
+  text-align: center;
+  font-weight: bold;
+  
+  border-radius: 2px;
+  
+  display: inline-block;
+}
+
+
+
+.footer {
+  font-family: var(--font1);
+  background-color: var(--bg);
+  color: var(--seco);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding: 10px;
+}
+
+.navb {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  background-color: var(--tert);
+  color: var(--prim);
+  font-family: var(--font1);
+  
+  border-top: 2px solid var(--seco);
+  border-left: 2px solid var(--seco);
+  border-right: 2px solid var(--prim);
+  border-bottom: 2px solid var(--prim);
+
+  padding: 10px;
+  width: 100%;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+}
+
+.navb a {
+  color: var(--seco) !important;
+  text-decoration: none;
+}
+
+n-avbar {
+  align-items: center;
+}
+
+.icon {
+  display: inline;
+  width: 1rem;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+}
+/*i suck at making variants*/
+.icon2 {
+  display: inline;
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  padding: 0 0.75rem 0 0;
+}
+
+.badges {
+  margin-left: auto;
+  margin-right: auto;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  row-gap: 5px;
+  max-width: 367px;
+}
+
+.dr1 {
+  position: relative;
+  display: inline-block;
+}
+
+.drb1 {
+  width: 40px;
+  font-family: var(--font1);
+  padding: 0;
+  font-size: 25px;
+  background-color: var(--tert);
+  color: var(--prim);
+  
+  border-top: 2px solid var(--seco);
+  border-left: 2px solid var(--seco);
+  border-right: 2px solid var(--prim);
+  border-bottom: 2px solid var(--prim);
+}
+
+.drc1 {
+  display: none;
+  position: absolute;
+  background-color: var(--tert);
+  color: var(--prim) !important;
+  min-width: 180px;
+  font-size: 1rem;
+  
+  border-top: 2px solid var(--seco);
+  border-left: 2px solid var(--seco);
+  border-right: 2px solid var(--prim);
+  border-bottom: 2px solid var(--prim);
+  
+  outline: 2px solid var(--prim);
+  
+  z-index: 5;
+  padding: 15px;
+}
+
+.drc1 a { color: var(--prim) !important; }
+
+.dr1:hover .drc1 {display: block;}
+
+.dr2 {
+  position: relative;
+  display: inline-block;
+}
+
+.drb2 {
+  padding: 0;
+  font-size: 15px;
+  background-color: var(--prim);
+  color: var(--seco);
+  border: none;
+  font-family: "Chicago";
+}
+
+.drc2 {
+  display: none;
+  position: absolute;
+  background-color: var(--prim);
+  color: var(--seco);
+  min-width: 160px;
+  font-size: 1rem;
+  
+  outline: 2px solid var(--seco);
+  
+  z-index: 5;
+  padding: 15px;
+}
+
+.drc2 button {
+  border: none;
+  font-size: 1rem;
+  font-family: "Chicago";
+  color: var(--seco);
+  background-color: var(--prim);
+}
+
+.dr2:hover .drc2 {display: block;}
+
+/*quick stuff*/
+
+.even {
+  display: flex;
+  justify-content: space-between;
+}
+
+.df {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

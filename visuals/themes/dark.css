@@ -1,0 +1,329 @@
+/*This file is a remnant of an experimental feature. Ignore if building.*/
+/*variables*/
+
+:root {
+  --prim: #111111;
+  --seco: #212121;
+  --tert: #FFFAFA;
+  --blk: #000000;
+  
+  --seco2: #222222;
+  --seco3: #333333;
+  --seco4: #444444;
+  --seco5: #555555;
+  --seco6: #666666;
+  
+  --text: #FFFAFA;
+  
+  --font1: "Chicago";
+  --font2: "Monaco";
+}
+
+/*desktop*/
+@media screen and (min-width: 900px) {
+  .content { padding: 80px 10vw 10vh 10vw !important; }
+  .dtp {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      gap: 20px;
+  }
+  .dtc { flex: 1; }
+  
+  .array { /*for the cards on the tunes page*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+  }
+}
+
+/*font*/
+
+@font-face {
+  font-family: "Monaco";
+  src: url("../fonts/Monaco.ttf");
+}
+
+@font-face {
+  font-family: "Chicago";
+  src: url("../fonts/ChicagoFLF.ttf");
+}
+
+/*core elements*/
+body {
+  font-family: var(--font2);
+  background-color: var(--blk);
+  color: var(--text) !important;
+  background-image: radial-gradient(var(--seco3) 1px, transparent 0);
+  background-size: 5px 5px;
+  
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+/*mine*/
+.content {
+  padding: 70px 20px 20px 20px;
+}
+
+
+.window {
+  outline: 2px solid var(--prim);
+  background-color: var(--seco3);
+  color: var(--tert);
+  filter: drop-shadow(8px 8px 0px var(--prim));
+  border-radius: 2px;
+  
+  margin-bottom: 20px;
+}
+
+.wbar {
+  font-family: var(--font1);
+  background-color: var(--seco2);
+  color: var(--tert);
+  padding: 12px;
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sbar {
+  font-family: var(--font1);
+  background-color: var(--seco);
+  filter: drop-shadow(8px 8px 0px var(--prim));
+  border-radius: 2px;
+  color: var(--tert);
+  
+  padding: 12px;
+  font-size: 1.1rem;
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wcontent {
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid var(--prim);
+}
+
+.bannerlnk {
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  margin: 0;
+  border-bottom: 2px solid var(--prim);
+}
+
+.scrollbox {
+  height: 150px;
+  overflow-y: scroll;
+  padding: 10px;
+  
+  outline: 2px solid var(--tert);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--seco);
+  outline: 2px solid var(--tert);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--tert);
+}
+
+.ico {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  outline: 1px solid var(--tert);
+  color: var(--tert);
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.3;
+  border-radius: 2px;
+  
+  display: inline-block;
+}
+
+.footer {
+  background-color: var(--blk);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding: 10px;
+}
+
+#badgeapple {
+  width: 88px;
+  height: 31px;
+  position: relative;
+}
+
+#badgeapple video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  box-sizing: border-box;
+  border: 3px solid var(--prim);
+}
+
+.navb {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  background-color: var(--seco2);
+  color: var(--tert);
+  border-bottom: 2px solid var(--blk);
+  font-family: var(--font1);
+
+  padding: 10px;
+  width: 100%;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+}
+
+.navb a {
+  color: var(--seco) !important;
+  text-decoration: none;
+}
+
+n-avbar {
+  align-items: center;
+}
+
+.icon {
+  display: inline;
+  width: 1rem;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+}
+/*i suck at making variants*/
+.icon2 {
+  display: inline;
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  padding: 0 0.75rem 0 0;
+}
+
+.badges {
+  margin-left: auto;
+  margin-right: auto;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  row-gap: 5px;
+  max-width: 367px;
+}
+
+.dr1 {
+  position: relative;
+  display: inline-block;
+}
+
+.drb1 {
+  padding: 0;
+  font-size: 25px;
+  background-color: var(--seco2);
+  color: var(--tert);
+  border: none;
+}
+
+.drc1 {
+  display: none;
+  position: absolute;
+  background-color: var(--seco3);
+  color: var(--tert) !important;
+  min-width: 180px;
+  font-size: 1rem;
+  border-radius: 2px;
+  
+  outline: 2px solid var(--tert);
+  
+  z-index: 5;
+  padding: 15px;
+}
+
+.drc1 a { color: var(--tert) !important; }
+
+.dr1:hover .drc1 {display: block;}
+
+.dr2 {
+  position: relative;
+  display: inline-block;
+}
+
+.drb2 {
+  padding: 0;
+  font-size: 15px;
+  background-color: var(--prim);
+  color: var(--seco);
+  border: none;
+  font-family: "Chicago";
+}
+
+.drc2 {
+  display: none;
+  position: absolute;
+  background-color: var(--prim);
+  color: var(--seco);
+  min-width: 160px;
+  font-size: 1rem;
+  
+  outline: 2px solid var(--seco);
+  
+  z-index: 5;
+  padding: 15px;
+}
+
+.drc2 button {
+  border: none;
+  font-size: 1rem;
+  font-family: "Chicago";
+  color: var(--seco);
+  background-color: var(--prim);
+}
+
+.dr2:hover .drc2 {display: block;}
+
+/*quick stuff*/
+
+.even {
+  display: flex;
+  justify-content: space-between;
+}
+
+.df {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
