@@ -1,10 +1,9 @@
 /*variables*/
 
 :root {
-  --prim: #111111;
-  --seco: #222222;
-  --tert: #000000;
-  --quar: #FFFAFA;
+  --prim: #212121;
+  --seco: #FFFAFA;
+  --tert: #A7A7A7;
   
   --seco2: #222222;
   --seco3: #333333;
@@ -16,11 +15,10 @@
   
   --font1: "Chicago";
   --font2: "Monaco";
-  --text: #A9A9A9;
 }
 
 /*desktop*/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   .content { padding: 80px 10vw 10vh 10vw !important; }
   .dtp {
       display: grid;
@@ -38,28 +36,27 @@
     gap: 8px;
   }
   
-  @media screen and (min-width: 900px) {
-    .dt { display: block; }
-    .mb { display: none; }
-  }
+  .dt { display: block; }
+  .mb { display: none; }
+  
 }
 
 /*font*/
 
 @font-face {
   font-family: "Monaco";
-  src: url("../fonts/Monaco.ttf");
+  src: url("visuals/fonts/Monaco.ttf");
 }
 
 @font-face {
   font-family: "Chicago";
-  src: url("../fonts/ChicagoFLF.ttf");
+  src: url("visuals/fonts/ChicagoFLF.ttf");
 }
 
 /*core elements*/
 body {
   font-family: var(--font2);
-  background-color: var(--tert);
+  background-color: var(--seco);
   background-image: radial-gradient(var(--prim) 1px, transparent 0);
   background-size: 5px 5px;
   
@@ -68,7 +65,7 @@ body {
 }
 
 a {
-  color: var(--quar);
+  color: var(--prim);
   font-size: 0.9rem;
 }
 
@@ -90,9 +87,9 @@ p-anel {
 }
 
 .window {
-  outline: 2px solid var(--seco);
+  outline: 2px solid var(--prim);
   background-color: var(--seco);
-  color: var(--text);
+  color: var(--prim);
   filter: drop-shadow(8px 8px 0px var(--prim));
   border-radius: 2px;
   
@@ -102,7 +99,7 @@ p-anel {
 .wbar {
   font-family: var(--font1);
   background-color: var(--prim);
-  color: var(--quar);
+  color: var(--seco);
   padding: 12px;
   font-size: 1.1rem;
   text-align: center;
@@ -114,10 +111,10 @@ p-anel {
 .sbar {
   font-family: var(--font1);
   background-color: var(--seco);
-  outline: 2px solid var(--tert);
+  outline: 2px solid var(--prim);
   filter: drop-shadow(8px 8px 0px var(--prim));
   border-radius: 2px;
-  color: var(--text);
+  color: var(--prim);
   
   padding: 12px;
   font-size: 1.1rem;
@@ -147,7 +144,6 @@ p-anel {
 }
 
 .scrollbox {
-  color: var(--quar);
   display: block;
   height: 150px;
   overflow-y: scroll;
@@ -187,8 +183,7 @@ p-anel {
 
 .footer {
   font-family: var(--font1);
-  background-color: var(--tert);
-  color: var(--text);
+  background-color: var(--seco);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -210,13 +205,13 @@ p-anel {
   box-sizing: border-box;
 
   background-color: var(--prim);
-  color: var(--quar);
+  color: var(--seco);
   border-bottom: 2px solid var(--seco);
   font-family: var(--font1);
 }
 
 .navb a {
-  color: var(--quar) !important;
+  color: var(--seco) !important;
   text-decoration: none;
 }
 
@@ -237,6 +232,8 @@ n-avbar {
   aspect-ratio: 1 / 1;
   align-items: center;
   margin-right: 0.75rem;
+  border: 2px solid var(--prim);
+  border-radius: 2px;
 }
 
 .badges {
@@ -258,12 +255,12 @@ n-avbar {
   align-items: center;
   justify-content: center;
 
-  background-image: url('../imgs/herabidingmemory.jpeg');
+  background-image: url('visuals/imgs/herabidingmemory.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  border-bottom: 2px solid var(--seco);
+  border-bottom: 2px solid var(--prim);
 }
 
 #clock {
@@ -282,7 +279,7 @@ n-avbar {
   padding: 0;
   font-size: 25px;
   background-color: var(--prim);
-  color: var(--quar);
+  color: var(--seco);
   border: none;
 }
 
@@ -317,10 +314,9 @@ n-avbar {
 }
 
 strong {
-  color: var(--quar);
   font-size: 1rem;
   font-family: "Chicago";
-  font-weight: none;
+  font-weight: bold;
 }
 
 .center {
@@ -328,3 +324,4 @@ strong {
   margin-right: auto;
   text-align: center;
 }
+
