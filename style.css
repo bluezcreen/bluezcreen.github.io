@@ -39,6 +39,13 @@
   .dt { display: block; }
   .mb { display: none; }
   
+  .bannerlnk {
+    max-height: 200px !important;
+    object-fit: cover;
+    object-position: center 75% !important;
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*font*/
@@ -131,9 +138,12 @@ p-anel {
 }
 
 .banner {
-  width: 100%;
-  height: auto;
-  border-bottom: 2px solid var(--prim);
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: auto;
+    max-height: 150px !important;
+    border-bottom: 2px solid var(--prim);
 }
 
 .bannerlnk {
@@ -141,6 +151,9 @@ p-anel {
   aspect-ratio: 3 / 1;
   object-fit: cover;
   border-bottom: 2px solid var(--prim);
+  object-position: center;
+  width: 100%;
+  height: auto;
 }
 
 .scrollbox {
