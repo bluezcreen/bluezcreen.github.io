@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="../visuals/imgs/favicon.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bluezcreen.github.io</title>
+  <title>bluezcreen.site</title>
   <style>
   @media screen and (min-width: 700px) { .sbar { font-size: 1rem; } }
   .sbar { font-size: 1.1rem; }
@@ -21,50 +21,42 @@
     <noscript><article class="window"><nav class="wbar">Oops!</nav><div class="wcontent df"><img src="../visuals/imgs/404.png" style="width: 80px; height: 80px;"><p>Your JavaScript is inactive.<br>Please turn it back on to load this page's elements.</p></div></article></noscript>
     
     <!--i hate how this page is just an assload of links lol-->
-    <p-anel title="gramaphone">
+    <t-bar title="the gramaphone">
       <img src="../visuals/imgs/b_tunes.png" class="banner">
-      <section class="wcontent">"albums and artists that i like."</section>
-    </p-anel>
+    </t-bar>
+    
+    <p-bar>
+      "some cacophonies for you to savor"
+    </p-bar>
     
     <p-bar>
       <a href="https://www.last.fm/user/bluezcreen"><i class="fa-brands fa-lastfm"></i> my last.fm page</a>
     </p-bar>
     
-    <p-anel title="featured song">
-      <div class="player" style="
-        max-height: 100px;
-        ">
-       <div class="feat" style="display: flex; flex-direction: row; align-items: center; gap: 10px; background-color: #ffffffff; padding-right: 10px;">
-        <audio controls><source src="../visuals/imgs/dewyroses.mp3" type="audio/mpeg"></audio>
-        <span style="font-family: var(--font1); font-size: 1.1rem;">Dewy Roses - Pitcher56 (4:48)</span>
-       </div> 
-      </div>
-    </p-anel>
-    <style>
-        @media screen and (max-width: 700px) {
-          .feat{
-            flex-direction: column !important;
-            padding-right: 0px !important;
-            padding-bottom: 10px !important;
-          }
-        }
-    </style>
+    <f-eatured></f-eatured>
     
     
     <hr>
     
+    <t-bar title="personal playlists">
+      <img src="../visuals/imgs/b_workshop.png" class="banner">
+    </t-bar>
     
-    <p-anel title="Lamp">
-      <img id="lamp" src="../visuals/imgs/lamp.jpeg" class="bannerlnk" style="object-position: 50% 65%;">
-      <section class="wcontent">"an indie pop/shibuya-kei band formed back in 2000. very underrated outside japan (excluding their song 'Kimi Ga Nakunara' that got viral on tiktok)"</section>
-    </p-anel>
-    <style>
-        @media screen and (min-width: 700px) {
-          #lamp{
-            object-position: 50% 60% !important;
-          }
-        }
-    </style>
+    <div class="array">
+      <p-bar><img class="icon2" src="../visuals/imgs/b_workshop.png"><a href="https://music.youtube.com/playlist?list=PL7gqX9cnkUoua0PGX2RX6RPZ0p-2IIOgX"> some sort of playlist</a></p-bar>
+      <p-bar><img class="icon2" src="../visuals/imgs/b_workshop.png"><a href="https://music.youtube.com/playlist?list=PL7gqX9cnkUosezq9CSv7dvlpcWUaCZ-7E"> total shibuya-kei</a></p-bar>
+      <p-bar><img class="icon2" src="../visuals/imgs/b_workshop.png"><a href="https://music.youtube.com/playlist?list=PL7gqX9cnkUosDpTkvXN1_YuzDnsjfFBEj"> total breakcore</a></p-bar>
+    </div>
+    
+    <hr>
+    
+    <t-bar title="albums">
+      <img src="../visuals/imgs/lamp2.png" class="banner">
+    </t-bar>
+    
+    <hr>
+    
+    <t-bar title="shibuya-kei"></t-bar>
     
     <div class="array">
       <p-bar><img class="icon2" src="../visuals/imgs/lampgenso.jpeg"><a href="https://youtube.com/playlist?list=OLAK5uy_kmYoE04ypukTWoP5sZUKXLzATNzd6Izew"> Lamp Genso</a></p-bar>
@@ -73,37 +65,38 @@
     </div>
     
     
-    <hr>
     
     
-    <p-anel title="pitcher56">
-      <img src="../visuals/imgs/herabidingmemory.jpeg" class="bannerlnk" style="object-position: 50% 40% !important;">
-      <section class="wcontent">"known for their popular album "her abiding memory", pitcher56 is an even more underrated shibuya-kei band"</section>
-    </p-anel>
+    
+    <!--<p-anel title="Cymbals">
+      <img src="../visuals/imgs/mrnoonespecial.jpg" class="bannerlnk" style="object-position: 50% 10% !important;">
+      <section class="wcontent">"band that disbanded in 2003 because they "wasn't able to make a hit song". too bad :( most of their songs are so worthy of being popular because they're so good (also, i can't find a better image, srry)"</section>
+    </p-anel>-->
     
     <div class="array">
-      <p-bar><img class="icon2" src="../visuals/imgs/herabidingmemory.jpeg"><a href="https://youtube.com/playlist?list=OLAK5uy_kcRGtWjV6pS_TGR88IjetvcNnMapwE5mc"> Her Abiding Memory</a></p-bar>
-      <p-bar><img class="icon2" src="../visuals/imgs/p56firstalbum.jpeg"><a href="https://youtube.com/playlist?list=OLAK5uy_mAV283CHKCNZe4fBon1uuIoIGoI5Y99Sc"> Pitcher56 1st Album</a></p-bar>
-      <p-bar><img class="icon2" src="../visuals/imgs/yourname.jpeg"><a href="https://youtube.com/playlist?list=OLAK5uy_ldCyP8QMDiVo6taJh2IRYaigqkd6pQ5uQ"> Your Name</a></p-bar>
+      <p-bar><img class="icon2" src="../visuals/imgs/mrnoonespecial.jpg"><a href="https://music.youtube.com/playlist?list=OLAK5uy_m6ZGw51wnF9jw8JLL6ZTVYh_DpYoMOCc0"> Mr. Noone Special</a></p-bar>
+      <p-bar><img class="icon2" src="../visuals/imgs/thatsentertainment.jpg"><a href="https://music.youtube.com/playlist?list=OLAK5uy_mbJC-pybhPWpWnY6EAy8TqgXTsD4D7Q5I"> That's Entertainment</a></p-bar>
+      <p-bar><img class="icon2" src="../visuals/imgs/loveyou.jpg"><a href="https://music.youtube.com/playlist?list=OLAK5uy_mnvEsJvt-dfcaD6Y0gPQeIRpo-SOy0340"> Love You</a></p-bar>
     </div>
     
+    <div class="array">
+      <p-bar><img class="icon2" src="../visuals/imgs/sunanopurin.jpeg"><a href="https://youtube.com/playlist?list=OLAK5uy_mklVTlymgCeDH_iKyjLeha7HdKtqGOq-E"> Suna no Purin</a></p-bar>
+      <p-bar><img class="icon2" src="../visuals/imgs/mrnoonespecial.jpg"><a href="https://youtube.com/playlist?list=OLAK5uy_kvnZrkVDrki8JdtW-CIEEm6LhzdW7V2VI"> Mr. Noone Special</a></p-bar>
+      <p-bar><img class="icon2" src="../visuals/imgs/citrobal.jpeg"><a href="https://youtube.com/playlist?list=OLAK5uy_lktmvouU1dWmmwK4kWNSY3lvI5EQRr4jA"> My Caution Line</a></p-bar>
+    </div>
     
     <hr>
     
-      <p-anel title="Tatsuro Yamashita">
+    <t-bar title="city pop"></t-bar>
+   
+    <!--<p-anel title="Tatsuro Yamashita">
         <img id="tatsuro" src="https://upload.wikimedia.org/wikipedia/en/d/d4/Alternative_cover_for_Ride_on_Time.jpg" class="bannerlnk" style="object-position: 50% 65%;">
         <section class="wcontent">
         "probably one of the best artists of japanese city pop. unfortunately though, he despises streaming services and that's why you'll never see him on any platform.<br><br>
          i've heard from somewhere that he wants to keep it that way so that people can experience his songs as an art form and not some random song that you'd skip 5 seconds after listening like what most people do on streaming. either that, or he likes gatekeeping. who knows?<br><br>
          by the way, there is definitely no site on the INTERNET that ARCHIVEs his songs online. you definitely need to buy his songs physically."<br><br>
         </section></p-anel>
-        <style>
-        @media screen and (min-width: 700px) {
-          #tatsuro{
-            object-position: 50% 50% !important;
-          }
-        }
-    </style>
+        <style>@media screen and (min-width: 700px) { #tatsuro { object-position: 50% 50% !important; } }</style>-->
       
       <div class="array">
         <p-bar><img class="icon2" src="https://upload.wikimedia.org/wikipedia/en/0/02/Rideontime_tatsyamashita.jpg"><a href="https://archive.org/details/1980-tatsuro-yamashita-ride-on-time"> Ride On Time</a></p-bar>
@@ -112,21 +105,15 @@
       </div>
     
     
-    <hr>
     
     
-      <p-anel title="Masayoshi Takanaka">
+    
+    <!--<p-anel title="Masayoshi Takanaka">
         <img id="masayoshi" src="../visuals/imgs/b_takanaka.jpeg" class="bannerlnk" style="object-position: 50% 30%;">
         <section class="wcontent">
           "butter and bread of city pop. also he owns this badass surfboard guitar. hell yeah to that!"
         </section></p-anel>
-        <style>
-            @media screen and (min-width: 700px) {
-          #masayoshi{
-            object-position: 50% 20% !important;
-          }
-        }
-        </style>
+        <style>@media screen and (min-width: 700px) { #masayoshi { object-position: 50% 20% !important; } }</style>-->
       
       <div class="array">
         <p-bar><img class="icon2" src="https://upload.wikimedia.org/wikipedia/en/d/d6/Seychelles_album_cover.jpg"><a href="https://youtube.com/playlist?list=OLAK5uy_k1-yims7Ax66s2rFYbS2cHsRhtB8XkX5k"> Seychelles</a></p-bar>
@@ -135,35 +122,37 @@
       </div>
     
     
-    <hr>
+    
     
 
-      <p-anel title="miscellaneous">
+    <!--<p-anel title="miscellaneous">
         <img id="misc" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Panchiko_Live_at_the_Fonda_Theatre.png/960px-Panchiko_Live_at_the_Fonda_Theatre.png" class="bannerlnk" style="object-position: 50% 65%;">
         <section class="wcontent">
         "a quick list of other albums from various artists that i've enjoyed"<br><br>
         </section></p-anel>
-        <style>
-            @media screen and (min-width: 700px) {
-          #misc{
-            object-position: 50% 50% !important;
-          }
-        }
-        </style>
+        <style>@media screen and (min-width: 700px) {#misc{object-position: 50% 50% !important;}}</style>-->
       
       <div class="array">
-        <p-bar><img class="icon2" src="../visuals/imgs/sunanopurin.jpeg"><a href="https://youtube.com/playlist?list=OLAK5uy_mklVTlymgCeDH_iKyjLeha7HdKtqGOq-E"> Suna no Purin</a></p-bar>
-        <p-bar><img class="icon2" src="../visuals/imgs/mrnoonespecial.jpg"><a href="https://youtube.com/playlist?list=OLAK5uy_kvnZrkVDrki8JdtW-CIEEm6LhzdW7V2VI"> Mr. Noone Special</a></p-bar>
         <p-bar><img class="icon2" src="../visuals/imgs/timely.png"><a href="https://youtube.com/playlist?list=OLAK5uy_n31rHVmQEMMIFZHHe3T5JPv7u3FghVtRk"> Timely!!</a></p-bar>
       </div>
+    
+      <hr>
+      
+      <t-bar title="etc (will be sorted later)"></t-bar>
+      
       <div class="array">
         <p-bar><img class="icon2" src="../visuals/imgs/vdc.png"><a href="https://youtube.com/playlist?list=OLAK5uy_mUjpq6hQ2Ub9rk238YqkO9FzCp6pHOQYg"> V:D:C</a></p-bar>
         <p-bar><img class="icon2" src="../visuals/imgs/kirametal.jpeg"><a href="https://youtube.com/playlist?list=OLAK5uy_nkh898m3hiRwzfcf3eXii7s0XfqzF3EKY"> Kirametal</a></p-bar>
-        <p-bar><img class="icon2" src="../visuals/imgs/citrobal.jpeg"><a href="https://youtube.com/playlist?list=OLAK5uy_lktmvouU1dWmmwK4kWNSY3lvI5EQRr4jA"> My Caution Line</a></p-bar>
       </div>
-
     
     <hr>
+
+    <t-bar title="previously featured songs"><img src="../visuals/imgs/lampgenso.jpeg" class="bannerlnk"></t-bar>
+    
+    <div class="array">
+      <p-bar><img class="icon2" src="../visuals/imgs/herabidingmemory.jpeg"><a href="https://youtu.be/hWbFvaKBi_4"> Dewy Roses</a></p-bar>
+      <p-bar><img class="icon2" src="../visuals/imgs/lampgenso.jpeg"><a href="https://youtu.be/AEzNWhWfeIg"> Ame Furu Yoru No Mukou</a></p-bar>
+    </div>
     
      <f-ooter></f-ooter>
   </main>

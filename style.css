@@ -1,9 +1,9 @@
 /*variables*/
 
 :root {
-  --prim: #212121;
-  --seco: #FFFAFA;
-  --tert: #A7A7A7;
+  --prim: #212121; /*dark gray, primary: text, title bars*/
+  --seco: #EEEEEE; /*dim white, secondary: background*/
+  --tert: #fffafa; /*soft white, tertiary: textboxes?*/
   
   --seco2: #222222;
   --seco3: #333333;
@@ -13,22 +13,22 @@
   
   --test: red;
   
-  --font1: "Chicago";
-  --font2: "Monaco";
+  --font1: "header";
+  --font2: "text";
+  /*vague variables ik*/
 }
 
 /*desktop*/
 @media screen and (min-width: 700px) {
-  .content { padding: 80px 10vw 10vh 10vw !important; }
-  .dtp {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(1, 1fr);
-      gap: 20px;
-      margin-bottom: 20px;
-  }
-  .dtc { flex: 1; }
+  .content { padding: 80px 12vw 10vh 12vw !important; }
   
+  .grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+   }
+ 
   .array { /*for the cards on the tunes page*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -36,8 +36,20 @@
     gap: 8px;
   }
   
-  .dt { display: block; }
-  .mb { display: none; }
+  .dt { display: block !important; }
+  .mb { display: none !important; }
+  
+  .dtnav {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .mbnav {
+    display: none !important;
+  }
   
   .bannerlnk {
     max-height: 200px !important;
@@ -46,18 +58,26 @@
     width: 100%;
     height: auto;
   }
+  
+  .feat {
+    flex-direction: row !important;
+    padding: 10px !important;
+    display: flex !important;
+  }
+  
+  #myogp .sbar { font-size: 1rem; }
 }
 
 /*font*/
 
 @font-face {
-  font-family: "Monaco";
-  src: url("visuals/fonts/Monaco.ttf");
+  font-family: "text";
+  src: url("/visuals/fonts/spacegrotesk.ttf");
 }
 
 @font-face {
-  font-family: "Chicago";
-  src: url("visuals/fonts/ChicagoFLF.ttf");
+  font-family: "header";
+  src: url("/visuals/fonts/spacegroteskSB.ttf");
 }
 
 /*core elements*/
@@ -65,7 +85,7 @@ body {
   font-family: var(--font2);
   background-color: var(--seco);
   background-image: radial-gradient(var(--prim) 1px, transparent 0);
-  background-size: 5px 5px;
+  background-size: 30px 30px;
   
   padding: 0;
   margin: 0;
@@ -78,6 +98,19 @@ a {
 
 .dt { display: none; }
 .mb { display: block; }
+
+.dtnav {
+  display: none;
+}
+
+.mbnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1rem;
+  padding: 5px;
+}
   
 
 *, *::before, *::after {
@@ -86,7 +119,7 @@ a {
 
 /*custom elements*/
 .content {
-  padding: 80px 25px 25px 25px;
+  padding: 80px 4.8vw 3.4vh 4.8vw;
 }
 
 p-anel {
@@ -94,11 +127,11 @@ p-anel {
 }
 
 .window {
-  outline: 2px solid var(--prim);
-  background-color: var(--seco);
+  outline: 1px solid var(--prim);
+  background-color: var(--tert);
   color: var(--prim);
-  filter: drop-shadow(8px 8px 0px var(--prim));
-  border-radius: 2px;
+  filter: drop-shadow(4px 4px 0px var(--prim));
+  border-radius: 1px;
   
   margin-bottom: 20px;
 }
@@ -107,19 +140,18 @@ p-anel {
   font-family: var(--font1);
   background-color: var(--prim);
   color: var(--seco);
-  padding: 12px;
+  padding: 8px;
   font-size: 1.1rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: left;
+  
+  align-items: le;
 }
 
 .sbar {
   font-family: var(--font1);
-  background-color: var(--seco);
-  outline: 2px solid var(--prim);
-  filter: drop-shadow(8px 8px 0px var(--prim));
+  background-color: var(--tert);
+  outline: 1px solid var(--prim);
+  filter: drop-shadow(4px 4px 0px var(--prim));
   border-radius: 2px;
   color: var(--prim);
   
@@ -137,62 +169,50 @@ p-anel {
   font-size: 0.9rem;
 }
 
-.banner {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: auto;
-    max-height: 150px !important;
-    border-bottom: 2px solid var(--prim);
+.tbar {
+  font-family: var(--font1);
+  background-color: var(--prim);
+  color: var(--seco);
+  
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  
+  display: flex;
+  justify-content: flex-start;
 }
 
-.bannerlnk {
-  width: 100%;
-  aspect-ratio: 3 / 1;
+.banner {
+  display: block;
   object-fit: cover;
-  border-bottom: 2px solid var(--prim);
   object-position: center;
   width: 100%;
   height: auto;
+  max-height: 150px !important;
+}
+/*bannerlnk was supposed to be used for images that arent cropped to
+the proper banner sizing, but is it even necessary? idfk*/
+
+.bannerlnk {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: auto;
+  max-height: 150px !important;
 }
 
 .scrollbox {
+  font-family: var(--font2);
   display: block;
   height: 150px;
   overflow-y: scroll;
   padding: 10px;
   
-  outline: 2px solid var(--prim);
+  outline: 1px solid var(--seco6);
 }
-
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: gray;
-  outline: 2px solid #111111;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #111111;
-}
-
-.ico {
-  padding: 0;
-  width: 25px;
-  height: 25px;
-  outline: 1px solid var(--seco);
-  color: var(--seco);
-  text-align: center;
-  font-weight: bold;
-  opacity: 0.3;
-  border-radius: 2px;
-  
-  display: inline-block;
-}
-
-
 
 .footer {
   font-family: var(--font1);
@@ -201,15 +221,12 @@ p-anel {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  bottom: 0;
   padding: 10px;
 }
 
 .navb {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 15px;
-  padding: 10px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -250,14 +267,9 @@ n-avbar {
 }
 
 .badges {
+  /*i dont even need a grid for yhis??? what was i thinkinh*/
   margin-left: auto;
   margin-right: auto;
-  
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  row-gap: 5px;
   max-width: 367px;
 }
 
@@ -268,12 +280,24 @@ n-avbar {
   align-items: center;
   justify-content: center;
 
-  background-image: url('visuals/imgs/herabidingmemory.jpeg');
+  background-image: url('visuals/imgs/evergreen.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   border-bottom: 2px solid var(--prim);
+  max-height: 100px;
+}
+
+.feat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #AAC6D2;
+  padding-right: 10px;
+  
+  display: none;
 }
 
 #clock {
@@ -287,8 +311,6 @@ n-avbar {
 }
 
 .drb {
-  width: 40px;
-  font-family: var(--font1);
   padding: 0;
   font-size: 25px;
   background-color: var(--prim);
@@ -313,6 +335,18 @@ n-avbar {
 
 .dr:hover .drc {display: block;}
 
+#myogp {
+  display: inline-block;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 3.4vw;
+  z-index: 9999;
+}
+
+#myogp .sbar {
+  font-size: 0.9rem !important;
+}
+
 /*quick stuff*/
 
 .even {
@@ -328,7 +362,7 @@ n-avbar {
 
 strong {
   font-size: 1rem;
-  font-family: "Chicago";
+  font-family: "header";
   font-weight: bold;
 }
 

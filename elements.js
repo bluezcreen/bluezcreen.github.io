@@ -5,7 +5,7 @@ class Panel extends HTMLElement {
 
     this.innerHTML = `
       <article class="window">
-        <nav class="wbar"><div class="ico">—</div> ${title} <div class="ico">┏</div></nav>
+        <nav class="wbar">${title}</nav>
         ${content}
       </article>
     `;
@@ -22,44 +22,74 @@ class Pbar extends HTMLElement {
   }
 }
 
+class Tbar extends HTMLElement {
+  connectedCallback() {
+    const contentTB = this.innerHTML;
+    const title = this.getAttribute("title") || "";
+    
+    this.innerHTML = `
+    <article class="window">
+      ${contentTB}
+      <section class="tbar">${title}</section>
+    </article>
+    `;
+  }
+}
+
 class Navbar extends HTMLElement {
   connectedCallback() {
     this.classList.add("navb")
 
     this.innerHTML = `
+    <div class="mbnav">
       <div class="dr">
-        <button class="drb">⟡</button>
+        <button class="drb"><img src="/visuals/imgs/favicon2.png" style="width: 35px; padding-left: 5px;"></button>
         <div class="drc">
-          <a href="/references/"><i class="fa-solid fa-computer"></i> about this site</a><br>
+          <a href="/references/"><i class="fa-solid fa-computer"></i>&nbsp; about this site</a><br>
           <hr>
-          <a href="/home/"><i class="fa-solid fa-house"></i> homepage</a><br>
-          <a href="/me/"><i class="fa-solid fa-user"></i> biography</a><br>
-          <a href="/stuff/"><i class="fa-solid fa-inbox"></i> box of many things</a><br>
-          <a href="/tunes/"><i class="fa-solid fa-music"></i> gramaphone</a><br>
-          <a href="https://www.nytimes.com/games/wordle/index.html"><i class="fa-solid fa-table-cells"></i> wordle</a>
-          <hr>
-            
-          <a><i class="fa-solid fa-palette"></i> themes (soon!)</a>
+          <a href="/"><i class="fa-solid fa-house"></i>&nbsp; homepage</a><br>
+          <a href="/stuff/"><i class="fa-solid fa-inbox"></i>&nbsp; drawer</a><br>
+          <a href="/tunes/"><i class="fa-solid fa-music"></i>&nbsp; gramaphone</a><br>
+          <a href="/links/"><i class="fa-solid fa-link"></i>&nbsp; links</a><br>
+          <a href="https://www.nytimes.com/games/wordle/index.html"><i class="fa-solid fa-table-cells"></i>&nbsp; wordle</a>
         </div>
       </div>
     
       <div style="display: flex; gap: 10px; margin-right: 10px;">
-        <span><i class="fa-solid fa-battery-three-quarters"></i></span>
-        <span><i class="fa-solid fa-signal"></i></span>
-        <span id="clock"></span>
+        <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+        <span class="clock"></span>
       </div>
+    </div>
+    
+    <div class="dtnav">
+        <div style="display: flex; flex-direction: row; gap: 20px; margin-left: 10px; align-items: center;">
+            <a href="/references/"><img src="/visuals/imgs/favicon2.png" style="width: 1.5rem"></a>
+            <a href="/">home</a>
+            <a href="/stuff/">drawer</a>
+            <a href="/tunes/">gramaphone</a>
+            <a href="/links/">links</a>
+            <a href="https://www.nytimes.com/games/wordle/index.html">wordle</a>
+      </div>
+    
+      <div style="display: flex; gap: 10px; margin-right: 10px;">
+        <span><i class="fa-solid fa-display"></i></span>
+        <span class="clock"></span>
+      </div>
+    </div>
     `;
+    
     this.startClock();
   }
+  
   startClock() {
-    const clock = this.querySelector("#clock");
-    if (!clock) return;
+    const clocks = this.querySelectorAll(".clock");
+    if (!clocks.length) return;
 
     const update = () => {
       const now = new Date();
       const h = String(now.getHours()).padStart(2, "0");
       const m = String(now.getMinutes()).padStart(2, "0");
-      clock.textContent = h + ":" + m;
+      clocks.forEach(clock => clock.textContent = h + ":" + m);
     };
 
     update();
@@ -67,32 +97,80 @@ class Navbar extends HTMLElement {
   }
 
   disconnectedCallback() {
-    clearInterval(this._clockTimer);
+    if (this._clockTimer) {
+      clearInterval(this._clockTimer);
+    }
   }
 }
+
 class Footer extends HTMLElement {
   connectedCallback() {
-    this.classList.add("badgeapple")
+    this.classList.add("badgeapple");
     
     this.innerHTML = `
     <main class="footer">
-      <div>bluezcreen.github.io | 2026</div>
-      <hr>
-      <div class="badges">
-        <img src="../visuals/imgs/bluezcreen_github_io.png">
-        <img src="../visuals/imgs/badge_git.png">
-        <img src="../visuals/imgs/badge_honeocities.png">
-        <img src="../visuals/imgs/badge_apple.gif">
+      bluezcreen.site<br>
+      <span style="font-family: text;">you've wasted <span id="timer">0m 0s</span> being here</span>
+    </main> 
+    `;
+    
+    this.startTimer();
+  }
+  
+      startTimer() {
+      let start = sessionStorage.getItem('timer-start');
+      if (!start) {
+        start = Date.now();
+        sessionStorage.setItem('timer-start', start);
+      } else {
+        start = parseInt(start);
+      }
+      
+      const timerDisplay = this.querySelector("#timer");
+      
+      this._timerInterval = setInterval(() => {
+        const elapsed = Math.floor((Date.now() - start) / 1000);
+        const minutes = Math.floor(elapsed / 60);
+        const seconds = elapsed % 60;
+        
+        timerDisplay.textContent = `${minutes}m ${seconds}s`;
+      }, 1000);
+    }
+}
+
+class Featured extends HTMLElement {
+  connectedCallback() {
+    const content = this.innerHTML;   
+    const title = this.getAttribute("title") || "";
+
+    this.innerHTML = `
+      <article class="window">
+        <nav class="wbar">featured music</nav>
+    
+        <div class="player">
+    
+        <audio controls class="mb"><source src="../visuals/imgs/evergreen.m4a" type="audio/mpeg"></audio>
+    
+       <div class="feat">
+        <audio controls class="dt"><source src="../visuals/imgs/evergreen.m4a" type="audio/mpeg"></audio>
+        <span style="font-family: var(--font1); font-size: 1.1rem;"><a href="https://youtu.be/F1Pd2tvO3Cc">evergreen</a> -</span>
+        <span style="font-size: 1rem;">kurayamisaka</span>
+    </div> 
+    
       </div>
     
-    
-    </div>
-  </main> 
+      <section class="wcontent mb center">
+        <span style="font-family: var(--font1); font-size: 1.1rem;"><a href="https://youtu.be/F1Pd2tvO3Cc">evergreen</a> -</span>
+        <span style="font-size: 1rem;">kurayamisaka</span>
+      </section>
+      </article>
     `;
   }
 }
 
 customElements.define("n-avbar", Navbar);
 customElements.define("p-bar", Pbar);
+customElements.define("t-bar", Tbar);
 customElements.define("f-ooter", Footer);
 customElements.define("p-anel", Panel);
+customElements.define("f-eatured", Featured);

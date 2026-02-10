@@ -1,0 +1,300 @@
+@font-face {
+  font-family: "SNNM";
+  src: url("visuals/fonts/Shinonome.ttf") format("truetype"); 
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chicago";
+  src: url("visuals/fonts/chicago.woff2");
+}
+
+body {
+  background-color: black;
+  color: darkgray;
+  font-family: "SNNM", monospace;
+  font-size: 17px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+strong {
+  color: white;
+  font-weight: normal;
+}
+
+#bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#content {
+  position: relative;
+  z-index: 1;
+  
+  margin: 20px;
+  margin-top: 50px;
+  padding: 5px;
+}
+
+.header {
+  font-size: 20px;
+  margin: 0;
+}
+
+.basic {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.center {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.centeritems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.even {
+  display: flex;
+  justify-content: space-between;
+}
+
+.df {
+  display: flex;
+}
+
+.min {
+  color: darkgray; /*highlights minor text as darkgray*/
+}
+
+#spam {
+  display-items: inline-block;
+  align-self: flex-end;
+}
+
+#notfound {
+  margin-top: 20vh;
+  width: 350px;
+  height: 350px;
+  background-image: url("visuals/imgs/claus.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;     /* important */
+  margin: 0;        /* NO spacing */
+  object-fit: contain; 
+}
+
+.bannerlnk {
+  display: block;
+  width: 100%;              /* scales with container */
+  aspect-ratio: 3 / 1;      /* 750 : 250 = 3 : 1 */
+  object-fit: cover;        /* crop, not stretch */
+  margin: 0;
+}
+
+/*about.html*/
+.controlbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;              /* prevents shrink/stretch weirdness */
+  background: #222222;
+  
+  font-size: 18px;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;            /* you probably want some padding */
+  box-sizing: border-box;
+  z-index: 9999;            /* keeps it above other elements */
+}
+
+
+.window {
+  outline: 2px solid #111111;
+  margin: 15px 0;
+  filter: drop-shadow(5px 5px 0px #000);
+}
+
+.windows {
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 992px) {
+
+  .windows {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .windows .window {
+    flex: 1 1 calc(50% - 20px);   /* half width */
+    max-width: 500px;             /* prevents stretching forever */
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.wbar {
+  font-family: "SNNM";
+  font-size: 20px;
+  text-align: left;
+  font-weight: normal;
+  padding: 15px;
+  outline: 2px solid #111111;
+  background-color: #222222;
+  color: white;
+}
+
+.wbarl {
+  font-family: "SNNM";
+  font-size: 25px;
+  text-align: center;
+  font-weight: normal;
+  padding: 15px;
+  outline: 2px solid #111111;
+  background-color: #222222;
+  color: white;
+}
+
+.wcontent {
+  /*use padding on child content*/
+  background-color: #333333;
+  flex: 1;
+}
+
+.wctitle {
+  /*must be a div*/
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.wtext {
+  padding: 15px;
+}
+
+.pd {
+  padding: 15px;
+}
+
+#avatar {
+  width: 50px;
+  height: 50px;
+  background-image: url("visuals/imgs/avatar.png");
+  background-size: cover;      
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   /* 3 columns on mobile */
+  gap: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .albums {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));  
+    /* As many columns as fit on desktop */
+  }
+}
+
+.acover {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.acoverblank {
+  width: 140px;
+  height: 140px;
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.mbutton {
+  font-family: "SNNM";
+  background-color: #202020;
+  outline: 2px solid black;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  filter: drop-shadow(5px 5px 0px black);
+}
+
+.mcontent {
+  min-width: 180px;
+  display: none;
+  position: absolute;
+  background-color: #333333;
+  filter: drop-shadow(5px 5px 0px #000000);
+  z-index: 2;
+  font-size: 20px;
+  padding: 10px;
+  
+}
+
+.menu:hover .mcontent {display: block;}
+
+.desktop {
+  display: none !important; /* hide on mobile */
+}
+
+@media (min-width: 992px) {
+  .desktop {
+    display: block !important; /* or flex, grid, whatever */
+  }
+}

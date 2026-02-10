@@ -7,8 +7,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="../visuals/imgs/favicon.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bluezcreen.github.io</title>
-  <style>h2 { padding: 0; margin: 0; }</style>
+  <title>bluezcreen.site</title>
+  <style>
+  h2 { padding: 0; margin: 0; }
+  .sbar { text-align: center; align-items: center; }
+  span { font-size: 0.8rem; }
+  ul { margin: 0; padding: 15px; }
+  .grid2 {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+   }
+  .home { margin-bottom: 1px !important; }
+  </style>
 </head>
 <body>
   <n-avbar></n-avbar>
@@ -18,29 +30,78 @@
     <noscript><article class="window"><nav class="wbar">Oops!</nav><div class="wcontent df"><img src="../visuals/imgs/404.png" style="width: 80px; height: 80px;"><p>Your JavaScript is inactive.<br>Please turn it back on to load this page's elements.</p></div></article></noscript>
     
     
-    <p-anel title="box of many things">
+    <t-bar title="the drawer of trinkets">
       <img src="../visuals/imgs/b_stuff.png" class="banner" style="object-position: center top !important;">
-       
-      <section class="wcontent">"many things i've enjoyed. games, media, etc."</section>
-    </p-anel>
+    </t-bar>
     
-    <p-anel title="the Mother series">
-      <img src="https://media1.tenor.com/m/AAO5vpTJrcEAAAAC/mother2-earthbound.gif" class="bannerlnk">
-      <section class="wcontent">
-        <h2>Mother 1</h2><br>
-        "honestly i barely played this version. it was clunky, annoying to play, and has excessive encounter rates. i dropped the game right before duncan factory. although i think the story seems interesting"<br><br>
-        <h2>Mother 2, aka Earthbound</h2><br>
-        "the most popular of the three. i fairly enjoyed it. it has a lot more gameplay than the story, but i think it's balanced enough. loved it."<br><br>
-        <h2>Mother 3</h2><br>
-        "oh boy the game was so good it was never localized. nintendo of japan really gatekept the game. this game is possibly the GREATEST JRPG i've played so far. the combo attack mechanic is very mesmerizing, the story is very in-depth this time, and the ending is peak. although i wish we got more of the unused content."
-        </section>
-    </p-anel>
+    <p-bar>"my miscellaneous interests"</p-bar>
     
-    <p-anel title="Tetris">
-      <img src="https://media1.tenor.com/m/FYcKtaceoOoAAAAC/tetris-tetrio.gif" class="bannerlnk" style="object-position: bottom;">
-      <section class="wcontent">"a block stacking game. everybody knows what a tetris is. It's pretty boring to play casually. competitive tetris is much more fun for me (i've played tetr.io/jstris)"</section>
-    </p-anel>
+    <div class="grid">
+      <div>
+        <p-anel title="video games">
+          <section class="wcontent">
+            <ul><li>Earthbound</li>
+              <li>Mother 3</li>
+              <li>Baba Is You</li>
+              <li>Tetris</li>
+              <li>osu!</li>
+              <li>Project Sekai</li>
+              <li>Project Diva</li>
+              <li>Phigros</li>
+              <li>Arcaea</li>
+              <li>et cetera</li>
+            </ul>
+          </section>
+        </p-anel>
+        
+        <p-anel title="my buttons">
+          <section class="wcontent center">
+            <a href="https://bluezcreen.github.io/visuals/imgs/bluezcreen_github_io.png"><img src="../visuals/imgs/bluezcreen_github_io.png"></a>
+            <a href="https://bluezcreen.github.io/visuals/imgs/badge_git.png"><img src="../visuals/imgs/badge_git.png"></a>
+            <a href="https://bluezcreen.github.io/visuals/imgs/badge_apple.gif"><img src="../visuals/imgs/badge_apple.gif"></a>
+          </section>
+        </p-anel>
+      
+       </div>
+      
+       <p-anel title="websites/tools">
+         <section class="wcontent">
+           <ul><li><a href="https://cobalt.tools">Cobalt - downloads videos</a></li><br>
+             <li><a href="https://remove.bg">remove.bg - removes backgrounds off images</a></li><br>
+             <li><a href="http://www.slsknet.org/news/">Soulseek - second coming of limewire</a></li><br>
+             <li><a href="https://github.com/liriliri/eruda">Eruda - use devtools on mobile!</a></li><br>
+             <li><a href="https://neal.fun">neal.fun - has fun minigames ig</a></li><br>
+             <li><a href="https://github.com/ReVanced/revanced-manager">Revanced Manager - modifies basic apps to have cool features, including an ad blocker!</a></li><br>
+             <li><a href="https://cssgridgenerator.io/">CSS grid generator - yes, i really needed this to make what you're seeing right now</a></li><br>
+             <li><a href="https://massgrave.dev">Massgrave - kills almost any Windows paywalls. just use linux at that point</a></li>
+           </ul>
+         </section>
+       </p-anel>
+    </div>
     
+    
+    <p-anel title="pictures galore"></p-anel>
+    <div class="grid2">
+      
+      <!--left-->
+      <div>
+      <p-bar><img src="../visuals/imgs/pic1.jpg" style="width: 100%"></p-bar>
+      <p-bar><img src="../visuals/imgs/pic4.jpg" style="width: 100%"></p-bar>
+      <p-bar><img src="../visuals/imgs/pic2.jpg" style="width: 100%;"></p-bar>
+      <p-bar><img src="../visuals/imgs/pic7.jpg" style="width: 100%;"></p-bar>
+      <p-bar><img src="../visuals/imgs/pic9.jpg" style="width: 100%;"></p-bar>
+      </div>
+      
+      <!--right-->
+      <div>
+      <p-bar><img src="../visuals/imgs/pic6.jpg" style="width: 100%;"></p-bar>
+      <p-bar><img src="../visuals/imgs/pic5.jpg" style="width: 100%;"></p-bar>
+      <p-bar><img src="../visuals/imgs/pic3.jpg" style="width: 100%;"></p-bar>
+      <p-bar><img src="../visuals/imgs/pic8.jpg" style="width: 100%;"></p-bar>
+      <p-bar><img src="../visuals/imgs/pic10.jpg" style="width: 100%;"></p-bar>
+      </div>
+    
+    </div>
     <f-ooter></f-ooter>
     
   </main>
