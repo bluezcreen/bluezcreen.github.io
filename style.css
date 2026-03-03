@@ -1,0 +1,68 @@
+:root {
+  --bg: #CCCCCC;
+  
+  --prim-text: #000000;
+  --seco-text: #FFFFFF;
+  
+  --title-text: "mondwest";
+  --body-text: "neuebit";
+}
+
+@font-face {
+  font-family: "mondwest";
+  src: url("mondwest.otf")
+}
+
+@font-face {
+  font-family: "neuebit";
+  src: url("neuebit.otf")
+}
+
+@font-face {
+  font-face: "jetbrainsmono";
+  src: url("JBM.ttf")
+}
+
+body {
+  padding: 70px 20px 20px 20px;
+  font-family: var(--body-text);
+  font-size: 0.9rem;
+  color: var(--prim-text);
+  background-color: var(--bg);
+}
+
+h1, h2, h3 { font-family: var(--title-text); }
+
+hr { background-color: var(--prim-text);
+     height: 1px;
+     border: none;
+}
+
+a {
+  color: var(--prim-text);
+  text-decoration: none;
+}
+
+#box {
+  padding: 1.7rem;
+  border: 1px solid var(--prim-text);
+  font-family: var(--body-text);
+  margin-bottom: 20px;
+}
+
+#boxcontent {
+  font-size: 1rem !important;
+}
+
+#boxtitle {
+  display: flex;
+  justify-content: flex-start;
+  
+  font-family: var(--title-text);
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: left;
+}
+
+#icon1 { height: 2rem; display: inline-block; }
+#icon2 { height: 2rem; display: none; }
