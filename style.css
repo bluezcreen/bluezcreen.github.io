@@ -2,7 +2,7 @@
 
 :root {
   --prim: #212121; /*dark gray, primary: text, title bars*/
-  --seco: #EEEEEE; /*dim white, secondary: background*/
+  --seco: #EFEFEF; /*dim white, secondary: background*/
   --tert: #fffafa; /*soft white, tertiary: textboxes?*/
   
   --seco2: #222222;
@@ -84,8 +84,6 @@
 body {
   font-family: var(--font2);
   background-color: var(--seco);
-  background-image: radial-gradient(var(--prim) 1px, transparent 0);
-  background-size: 30px 30px;
   
   padding: 0;
   margin: 0;
@@ -119,7 +117,7 @@ a {
 
 /*custom elements*/
 .content {
-  padding: 80px 4.8vw 3.4vh 4.8vw;
+  padding: 70px 4.8vw 3.4vh 4.8vw;
 }
 
 p-anel {
