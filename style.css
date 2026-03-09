@@ -1,0 +1,372 @@
+/*variables*/
+
+:root {
+  --prim: #212121; /*dark gray, primary: text, title bars*/
+  --seco: #EFEFEF; /*dim white, secondary: background*/
+  --tert: #fffafa; /*soft white, tertiary: textboxes?*/
+  
+  --seco2: #222222;
+  --seco3: #333333;
+  --seco4: #444444;
+  --seco5: #555555;
+  --seco6: #666666;
+  
+  --test: red;
+  
+  --font1: "header";
+  --font2: "text";
+  /*vague variables ik*/
+}
+
+/*desktop*/
+@media screen and (min-width: 700px) {
+  .content { padding: 80px 12vw 10vh 12vw !important; }
+  
+  .grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+   }
+ 
+  .array { /*for the cards on the tunes page*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+  }
+  
+  .dt { display: block !important; }
+  .mb { display: none !important; }
+  
+  .dtnav {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .mbnav {
+    display: none !important;
+  }
+  
+  .bannerlnk {
+    max-height: 200px !important;
+    object-fit: cover;
+    object-position: center 75% !important;
+    width: 100%;
+    height: auto;
+  }
+  
+  .feat {
+    flex-direction: row !important;
+    padding: 10px !important;
+    display: flex !important;
+  }
+  
+  #myogp .sbar { font-size: 1rem; }
+}
+
+/*font*/
+
+@font-face {
+  font-family: "text";
+  src: url("/visuals/fonts/spacegrotesk.ttf");
+}
+
+@font-face {
+  font-family: "header";
+  src: url("/visuals/fonts/spacegroteskSB.ttf");
+}
+
+/*core elements*/
+body {
+  font-family: var(--font2);
+  background-color: var(--seco);
+  
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--prim);
+  font-size: 0.9rem;
+}
+
+.dt { display: none; }
+.mb { display: block; }
+
+.dtnav {
+  display: none;
+}
+
+.mbnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1rem;
+  padding: 5px;
+}
+  
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*custom elements*/
+.content {
+  padding: 70px 4.8vw 3.4vh 4.8vw;
+}
+
+p-anel {
+  display: block;
+}
+
+.window {
+  outline: 1px solid var(--prim);
+  background-color: var(--tert);
+  color: var(--prim);
+  filter: drop-shadow(4px 4px 0px var(--prim));
+  border-radius: 1px;
+  
+  margin-bottom: 20px;
+}
+
+.wbar {
+  font-family: var(--font1);
+  background-color: var(--prim);
+  color: var(--seco);
+  padding: 8px;
+  font-size: 1.1rem;
+  text-align: left;
+  
+  align-items: le;
+}
+
+.sbar {
+  font-family: var(--font1);
+  background-color: var(--tert);
+  outline: 1px solid var(--prim);
+  filter: drop-shadow(4px 4px 0px var(--prim));
+  border-radius: 2px;
+  color: var(--prim);
+  
+  padding: 12px;
+  font-size: 1.1rem;
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wcontent {
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+.tbar {
+  font-family: var(--font1);
+  background-color: var(--prim);
+  color: var(--seco);
+  
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  
+  display: flex;
+  justify-content: flex-start;
+}
+
+.banner {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: auto;
+  max-height: 150px !important;
+}
+/*bannerlnk was supposed to be used for images that arent cropped to
+the proper banner sizing, but is it even necessary? idfk*/
+
+.bannerlnk {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: auto;
+  max-height: 150px !important;
+}
+
+.scrollbox {
+  font-family: var(--font2);
+  display: block;
+  height: 150px;
+  overflow-y: scroll;
+  padding: 10px;
+  
+  outline: 1px solid var(--seco6);
+}
+
+.footer {
+  font-family: var(--font1);
+  background-color: var(--seco);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  bottom: 0;
+  padding: 10px;
+}
+
+.navb {
+  gap: 15px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-sizing: border-box;
+
+  background-color: var(--prim);
+  color: var(--seco);
+  border-bottom: 2px solid var(--seco);
+  font-family: var(--font1);
+}
+
+.navb a {
+  color: var(--seco) !important;
+  text-decoration: none;
+}
+
+n-avbar {
+  align-items: center;
+}
+
+.icon {
+  display: inline;
+  width: 1rem;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+}
+/*i suck at making variants*/
+.icon2 {
+  display: inline;
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  margin-right: 0.75rem;
+  border: 2px solid var(--prim);
+  border-radius: 2px;
+}
+
+.badges {
+  /*i dont even need a grid for yhis??? what was i thinkinh*/
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 367px;
+}
+
+.player {
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('visuals/imgs/evergreen.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-bottom: 2px solid var(--prim);
+  max-height: 100px;
+}
+
+.feat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #AAC6D2;
+  padding-right: 10px;
+  
+  display: none;
+}
+
+#clock {
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.dr {
+  position: relative;
+  display: inline-block;
+}
+
+.drb {
+  padding: 0;
+  font-size: 25px;
+  background-color: var(--prim);
+  color: var(--seco);
+  border: none;
+}
+
+.drc {
+  display: none;
+  position: absolute;
+  background-color: var(--prim);
+  color: var(--seco) !important;
+  min-width: 15rem;
+  border-radius: 2px;
+  font-size: 1rem;
+  
+  outline: 2px solid var(--seco);
+  
+  z-index: 5;
+  padding: 15px;
+}
+
+.dr:hover .drc {display: block;}
+
+#myogp {
+  display: inline-block;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 3.4vw;
+  z-index: 9999;
+}
+
+#myogp .sbar {
+  font-size: 0.9rem !important;
+}
+
+/*quick stuff*/
+
+.even {
+  display: flex;
+  justify-content: space-between;
+}
+
+.df {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+strong {
+  font-size: 1rem;
+  font-family: "header";
+  font-weight: bold;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+

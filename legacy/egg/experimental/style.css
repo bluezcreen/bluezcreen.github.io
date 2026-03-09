@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+}
+
+a {
+  color: white;
+}
+
+#home {
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  background-image: url('room.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  outline: 1px solid white;
+  padding: 15px;
+  margin-top: 20vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;   /* pushes main to top, footer to bottom */
+  text-align: right;
+  font-size: 16px;
+}
+
+header {
+  font-size: 30px;
+}
+
+.basic {
+  margin: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blk {
+  background-color: black;
+}
+
+#spam {
+  background-color: black;
+  display-items: inline-block;
+  align-self: flex-end;
+}
