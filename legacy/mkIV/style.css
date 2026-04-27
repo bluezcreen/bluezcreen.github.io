@@ -1,0 +1,150 @@
+:root {
+  --bg: #212121;
+  --accent: #989898;
+  --prim-text: #EEEEEE;
+  --seco-text: #FFFFFF;
+  
+  --title-font: "mondwest";
+  --body-font: "neuebit";
+}
+
+@font-face {
+  font-family: "mondwest";
+  src: url("assets/mondwest.otf")
+}
+
+@font-face {
+  font-family: "neuebit";
+  src: url("assets/neuebit.otf")
+}
+
+@font-face {
+  font-family: "jbm";
+  src: url("assets/JBM.ttf")
+}
+
+@font-face {
+  font-family: "DOS";
+  src: url("assets/DOS.ttf")
+}
+
+@media screen and (min-width: 700px) {
+  body { max-width: 600px; }
+  
+  .desktop { display: block; }
+  .mobile { display: none; }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px 20px 20px 20px;
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  color: var(--prim-text);
+  background-color: var(--bg);
+}
+
+h1, h2, h3 { font-family: var(--title-font); font-weight: normal; display: inline; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; font-family: var(--body-font) !important;}
+
+hr { 
+  background-color: var(--accent);
+  height: 0.5px;
+  border: none;
+}
+
+pre { font-family: monospace; font-size: 1rem; }
+
+a {
+  color: var(--prim-text);
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: var(--bg);
+  color: var(--prim-text);
+  outline: 1px solid var(--prim-text);
+  font-family: var(--title-font);
+  font-size: 1.2rem;
+  padding: 8px;
+}
+
+
+.desktop { display: none; }
+.mobile { display: block; }
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+
+.header {
+  padding: 50px 0 0 0;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.footer { /*foot🤤🤤🤤*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  bottom: 0;
+  padding: 10px;
+}
+
+#box {
+  padding: 1.5rem;
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  font-family: var(--body-font);
+}
+
+#boxcontent {
+  font-size: 1.4rem !important;
+}
+
+#boxtitle {
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: left;
+  
+  padding: 2px;
+  
+  background-color: var(--prim-text);
+  color: var(--bg);
+}
+
+n-av a { text-decoration: underline; }
+
+#icon1 { height: 2rem; display: none; }
+#icon2 { height: 2rem; display: inline-block; }
+
+#tw { display: inline-block; }
+#twtext {
+  margin: 0;
+  font-size: 1.5rem;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 1s steps(20),
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% { border-color: transparent; }
+}
+
+@keyframes typing {
+  from { width: 0; }
+}

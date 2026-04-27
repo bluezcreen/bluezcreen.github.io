@@ -49,7 +49,7 @@ class Navbar extends HTMLElement {
           <hr>
           <a href="/"><i class="fa-solid fa-house"></i>&nbsp; homepage</a><br>
           <a href="/stuff/"><i class="fa-solid fa-inbox"></i>&nbsp; drawer</a><br>
-          <a href="/tunes/"><i class="fa-solid fa-music"></i>&nbsp; gramaphone</a><br>
+          <a href="/wiki/"><i class="fa-solid fa-feather-pointed"></i>&nbsp; board</a><br>
           <a href="/links/"><i class="fa-solid fa-link"></i>&nbsp; links</a><br>
           <a href="https://www.nytimes.com/games/wordle/index.html"><i class="fa-solid fa-table-cells"></i>&nbsp; wordle</a>
         </div>
@@ -66,7 +66,7 @@ class Navbar extends HTMLElement {
             <a href="/references/"><img src="/visuals/imgs/favicon2.png" style="width: 1.5rem"></a>
             <a href="/">home</a>
             <a href="/stuff/">drawer</a>
-            <a href="/tunes/">gramaphone</a>
+            <a href="/wiki/">board</a>
             <a href="/links/">links</a>
             <a href="https://www.nytimes.com/games/wordle/index.html">wordle</a>
       </div>

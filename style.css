@@ -189,7 +189,7 @@ p-anel {
   max-height: 150px !important;
 }
 /*bannerlnk was supposed to be used for images that arent cropped to
-the proper banner sizing, but is it even necessary? idfk*/
+the proper banner sizing, but is it even necessary? idfk what it's even for anymore*/
 
 .bannerlnk {
   display: block;
