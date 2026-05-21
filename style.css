@@ -1,0 +1,194 @@
+:root {
+  --bg: #EFEFEF;
+  --dark: #212121; /*text, title bars*/
+  --light: #fffafa; /*???*/
+  --white: #FFFFFF;
+  
+  --gray: #676767;
+
+  --test: red;
+  
+  --fontheader: "sgb";
+  --fontmain: "sg";
+}
+
+/*desktop padding*/
+/*
+@media screen and (min-width: 700px) {
+  main { padding: 0 15vw 0 15vw !important; }
+}*/
+
+/*font*/
+
+@font-face {
+  font-family: "sg";
+  src: url("elements/spacegrotesk.ttf");
+}
+
+@font-face {
+  font-family: "sgb";
+  src: url("elements/spacegroteskSB.ttf");
+}
+
+body {
+  background-image:
+    linear-gradient(to bottom, var(--bg), transparent),
+    radial-gradient(var(--gray) 11.6%, transparent 11.6%);
+
+  background-position:
+    0 0,
+    4px 4px;
+
+  background-size:
+    100% 90vh,
+    10px 10px;
+    
+  background-repeat: 
+    no-repeat,
+    repeat;
+
+  background-color: var(--bg);
+  
+  font-family: var(--fontmain);
+  font-size: 0.9rem;
+  background-color: var(--bg);
+  
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 30px;
+  gap: 18px;
+  margin: 0 auto;
+  
+  max-width: 750px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+* { box-sizing: border-box; }
+/*css you are an absolute retard for not having this be the default behavior
+you know how many times i've messed up from this right*/
+
+hr { margin: 20px 0 20px 0 }
+h1, h2 { margin: 0; }
+a { color: var(--dark) }
+b { font-family: "sgb"; }
+
+.window {
+  width: 100%;
+  outline: 1px solid var(--dark);
+  background-color: var(--white);
+  color: var(--dark);
+  filter: drop-shadow(6px 6px 0px var(--dark));
+  border-radius: 1px;
+}
+
+.wtitle {
+  font-family: var(--fontheader);
+  color: var(--light);
+  padding: 8px;
+  font-size: 1.2rem;
+  text-align: left;
+  width: 100%;
+  background-color: var(--dark);
+}
+
+.content {
+  display: block;
+  padding: 20px;
+  line-height: 1;
+}
+
+.content a { color: var(--dark); }
+
+.window.bar {
+  padding: 12px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.footer {
+  font-family: var(--fontmain);
+  background-color: var(--bg);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  bottom: 0;
+  padding: 10px;
+}
+
+.navb {
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+
+  background-color: var(--bg);
+  color: var(--dark);
+  border-top: 2px solid var(--dark);
+  
+  font-family: var(--fontheader);
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbuttons { 
+  max-width: 500px;
+  gap: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.navbuttons i { font-size: 1.8rem; }
+.navbuttons a { text-decoration: none; }
+
+.df { display: flex; }
+.df.bio {
+  gap: 3px;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: right;
+}
+.df.bio.left { text-align: left; }
+
+
+
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+.fontbold { font-family: var(--fontheader) !important; }
+.fontregular { font-family: var(--fontmain) !important; }
+
+#imgview {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.8);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+#imgview img {
+  max-width: 90vw;
+  max-height: 90vh;
+}

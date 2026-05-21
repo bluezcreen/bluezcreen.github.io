@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styled.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bluezcreen.site</title>
+</head>
+
+<body>
+<main>
+  
+  <div class="window">
+    <div class="wtitle"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;about me</div>
+    
+    <div class="content">
+      <article class="df bio">
+        <img src="elements/rabbit.png" style="width: 10rem">
+        <b>he/him • 16 • SE Asia • INFP • highschooler interested in webdev & tech</b>
+      </article>
+      
+      <hr>
+      
+      <article>
+        i'm known online under the username 'bluezcreen'. it's literally in the domain name<br><br>
+        chronically online, tech enthusiast, thingamajig and whatchamacallit living in Indonesia<!--<br>currently surviving off dimes because of inflation-->
+      </article>
+      
+      <hr>
+      
+      <article class="df bio left">
+        <div>
+        <b>software:</b> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;acode (scripting)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;termux (git, for github)<br><br>
+        </div>
+        
+        <div>
+        <b>coding languages:</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;HTML, CSS<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;JavaScript (not yet)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Python (a bit)
+        </div>
+      </article>
+      
+      <hr>
+      
+      <article class="center">
+      <h2>
+      <a href="https://x.com/bluezcreen_" ><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://github.com/bluezcreen" ><i class="fa-brands fa-github"></i></a>
+      <a href="https://discord.com/users/764432072261107763"><i class="fa-brands fa-discord"></i></a>
+      <!--bluesky <a href="https://bsky.app/profile/bluezcreen.bsky.social" ><i class="fa-solid fa-earth-asia"></i></a>-->
+      <a href="https://www.last.fm/user/bluezcreen" ><i class="fa-brands fa-lastfm"></i></a>
+      <a href="https://m.youtube.com/channel/UCLZkiAjM041QTJiqf9Q_Vmw" ><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@bluezcreen_?_r=1&_t=ZP-91FZekLYC7z" ><i class="fa-brands fa-tiktok"></i></a> 
+      <a href="https://steamcommunity.com/profiles/76561199794365959/"><i class="fa-brands fa-steam"></i></a>
+      </h2>
+    </article>
+    </div>
+  </div>
+  
+  <div class="window">
+    <div class="wtitle"><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;say something</div>
+    <iframe src="https://www5.cbox.ws/box/?boxid=960072&boxtag=h5keA3" width="100%" height="200" allowtransparency="yes" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+  </div>
+  
+  <div class="window">
+    <div class="wtitle"><i class="fa-solid fa-book-open"></i>&nbsp;&nbsp;pages</div>
+    <div class="content">
+    this website is under renovation<br>
+    new pages are coming soon. give me time to come up with some<br><br>
+    <a href="indexn't.html">open old site</a>
+    </div>
+  </div>
+  
+  <!--
+  <div class="window bar df bio left">
+    <div>
+    <a href="https://youtu.be/7bK5EPjGri4"><b>&nbsp;Carnival</b> - <i>The Cardigans</i></a><br>
+    <i>"Come on and love me now"</i>
+    </div>
+    <div><h1><i class="fa-solid fa-music"></i></h1></div>
+  </div>
+  
+  
+  <div class="footer">
+    <span class="fontbold">bluezcreen.site</span>
+     &nbsp;|&nbsp;
+    <span>you've wasted <span id="timer">0m 0s</span> being here</span>
+  </div>
+  -->
+</main>
+
+<script src="scripted.js"defer></script>
+</body>
+
+</html>
+
+
+
+
+<img src="twtbanner.png"></img>
+
+
+
+
+
+
+
