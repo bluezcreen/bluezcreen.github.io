@@ -9,44 +9,45 @@
 </head>
 
 <body>
-  <nav class="header">
+  <nav class="header homepage">
+    
+    <article>
     <div>
       <img src="assets/favicon.png" id="icon1">
       <img src="assets/favicon2.png" id="icon2">
-      <h1>&nbsp;bluezcreen</h1>
+      <h2>&nbsp;bluezcreen</h2>
     </div>
+    
     <nav style="font-size: 1.4rem;">
       <div id="tw">
         <p id="twtext" class="hometext">you probably saw me on twitter</p>
       </div>
-      <hr>
-      <div style="font-size: 1.2rem">
+    </nav>
+    </article>
+    
+    <div style="font-size: 1.2rem">
       <a href="https://x.com/bluezcreen"><i class="fa-brands fa-twitter"></i></a>&nbsp;
       <a href="https://m.youtube.com/channel/UCLZkiAjM041QTJiqf9Q_Vmw"><i class="fa-brands fa-youtube"></i></a>&nbsp;
       <a href="https://discord.com/users/764432072261107763"><i class="fa-brands fa-discord"></i></a>&nbsp;
       <a href="https://github.com/bluezcreen"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </nav>
+    </div>
   </nav>
   
-  <noscript>
-    yes, i needed JS to render my stuff, it's obiquitous<br>
-    now don't be a neocitian luddite and turn it back on<br>
-  </noscript>
-  
-  <text-box title="whoami&nbsp;">
-    <article style="display: flex;">
+  <div class="box">
+    <article>
+    <div id="bio">
     <img src="assets/profile.webp" style="width: 85px; flex-shrink: 0">
-    <div style="margin-left: 10px">
-      bluezcreen@nowhere<br>
-      - 16M @ highschool<br>
-      - speaks EN and ID<br>
-      - i hate w*ndows 11<br>
-      - <a href="https://twitter.com/bluezcreen"><u>i live at twitter</u></a><br>
-      - i don't have much else to say about myself 
+    <div>he/him, 16, @SE Asia, INFP<br>highschooler interested in webdev & tech</div>
+    </div>
+    
+    <hr>
+    
+    <div>
+    i'm known online under the username 'bluezcreen'. it's literally in the domain name<br><br>
+    chronically online, tech enthusiast, thingamajig and whatchamacallit living in Indonesia<!--<br>currently surviving off dimes because of inflation-->
     </div>
     </article>
-    </text-box>
+  </div>
   
   <!--<text-box title="cat checklist.txt">
     [ ] actually add other pages<br>
@@ -55,10 +56,22 @@
     [ ] idea: a page that runs stupid scripts i made while learning python
   </text-box>-->
   
-  <n-av></n-av>
+  <article class="box">
+    <a href="/">homepage</a>&nbsp;&nbsp;&nbsp;
+    <a href="/socials/">socials</a>&nbsp;&nbsp;&nbsp;
+    <a href="/guestbook/">guestbook</a>&nbsp;&nbsp;&nbsp;
+    <a href="/archive/">archive</a>&nbsp;&nbsp;&nbsp;
+    <hr>
+      
+    <div style="opacity: 50%;">
+    <a onclick="darkMode()">dark</a>&nbsp;&nbsp;&nbsp;
+    <a onclick="lightMode()">light</a>&nbsp;&nbsp;&nbsp;
+    <s><a>themer (TBA)</a></s>
+    </div>
+  </article>
   
-  <div class="center" style="margin: 5rem 0 20px 0; padding: 1.5rem">
-    <pre style="margin: 0 auto">
+  <div class="haiku">
+    <pre>
  -----------------------------
 / I don't like haikus         \
 | The structure is too rigid  |
@@ -70,8 +83,8 @@
                 ||----w |
                 ||     ||
     </pre>
+    <foot-er></foot-er>
   </div>
   
-  <foot-er></foot-er>
-  <script src="elements.js"defer></script>
+  <script src="elements.js" defer></script>
 </body>
